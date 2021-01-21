@@ -10,15 +10,20 @@
     
     background: url('./hero.jpg');
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 60vh;
     background-size: cover;
-    padding: 0rem 5rem;
+    padding-top: 10;
+    padding: 0rem 0rem;
+}
+.navbar{
+    background: white;
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     min-height: 10vh;
+    padding: 0rem 5rem
 }
 .nav-links{
     display: flex;
@@ -40,30 +45,76 @@ nav{
 
 
 #logo{
-    font-family: 'Lobster Two', cursive;
+    font-family: 'Poppins', cursive;
     font-weight: lighter;
     font-size: 2rem;
 }
 .big-text{
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -30%);
     font-size: 5rem;
     font-family: 'Lobster Two', cursive;
 }
-.sustainable{
+.small-text{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 2rem;
+    font-family: 'Poppins', cursive;
+    color: #504d4d;
+}
+.box{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+.box1{
+   border: 1px rgb(192, 190, 190);
+   border-style:;
+   align-items: center;
+    padding: 150px 30px;
+  
+   margin: 50px 100px;
+    border: solid rgb(167, 166, 166);
+    border-radius: 5%;
+    
+}
+.box2{
+    border: 1px rgb(212, 212, 212);
+    border-style:;
+    align-items: center;
+     padding: 150px 30px;
+   
+    margin: 50px 100px;
+     border: solid rgb(180, 178, 178);
+     border-radius: 5%;
+     
+ }
+ .box3{
+    border: 1px black;
+    border-style:;
+    align-items: center;
+     padding: 150px 30px;
+   
+    margin: 50px 100px;
+     border: solid rgb(179, 175, 175);
+     border-radius: 5%;
+     
+ }
+.bo{
     font-family: 'Lobster Two', cursive;
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 25%;
-    transform: translate(-80%, -20%);
+    transform: translate(-70%, -25%);
     font-size: 1.5rem;
     align-items: center ;
-    border: solid white;
+    border: solid rgb(0, 0, 0);
     border-bottom: none;
-    background-color: #9db5c2;
-    padding: 100px 100px;
+    background-color: #ffffff;
+    padding: 80px 100px;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
 }
@@ -132,7 +183,7 @@ display: inline-block;
 }
 .Login{
 border: 5px solid #5ba2b9;
-background: #dadfe2;
+
 
 padding: 5px 15px;
 
@@ -141,7 +192,7 @@ padding: 5px 15px;
 }
 .search{
 position: absolute;
-top: 50%;
+top: 40%;
 left: 50%;
 transform: translate(-50%,-50%);
 background: white;
