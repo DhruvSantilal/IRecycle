@@ -6,15 +6,7 @@
 .main{
     font-family: "Poppins", sans-serif;
 }
-.landing{
-    
-    background: url('./hero.jpg');
-    background-repeat: no-repeat;
-    min-height: 60vh;
-    background-size: cover;
-    padding-top: 10;
-    padding: 0rem 0rem;
-}
+
 .navbar{
     background: white;
 }
@@ -25,6 +17,7 @@ nav{
     min-height: 10vh;
     padding: 0rem 5rem
 }
+
 .nav-links{
     display: flex;
     list-style: none;
@@ -42,81 +35,167 @@ nav{
     text-decoration: none;
     color: black;
 }
-
+.nav-links a.login{
+    z-index: 3;
+    border: 5px solid #000000;
+    
+    padding: 5px 15px;
+    background: black;
+    color: white;
+    
+}
 
 #logo{
     font-family: 'Poppins', cursive;
     font-weight: lighter;
     font-size: 2rem;
 }
+.login{
+  
+    
+    
+    }
+
+    
+.landing{
+    
+    background: url('./hero.jpg');
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    background-size: cover;
+    width: 100%;
+    
+    
+}
 .big-text{
-    position: absolute;
+    /* position: absolute;
     top: 20%;
     left: 50%;
     transform: translate(-50%, -30%);
     font-size: 5rem;
+    font-family: 'Lobster Two', cursive; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
     font-family: 'Lobster Two', cursive;
+    padding-top: 50px;
 }
 .small-text{
-    position: absolute;
+    /* position: absolute;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -30%);
     font-size: 2rem;
     font-family: 'Poppins', cursive;
+    color: #504d4d; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: 'Poppins', cursive;
     color: #504d4d;
 }
+.search{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    }
+    
+    .search:hover {
+        width: 240px;
+        padding: 0 6px;
+       }
+    
+       .username{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        font-size: 1.4rem;
+        font-family: 'Lobster Two', cursive; 
+       }
+       .password{
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        font-size: 1.4rem;
+        font-family: 'Lobster Two', cursive; 
+       }
+       .submit{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        font-size: 1.4rem;
+        font-family: 'Lobster Two', cursive; 
+       }
 .box{
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr ;
+height: 40vh;
+padding: 3rem 15rem;
 }
 .box1{
-   border: 1px rgb(192, 190, 190);
-   border-style:;
-   align-items: center;
-    padding: 150px 30px;
-  
-   margin: 50px 100px;
-    border: solid rgb(167, 166, 166);
-    border-radius: 5%;
-    
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.box1 h1{
+padding: 20px;
+   
+   
+}
+.box1 h2{
+font-weight: lighter;
+font-size: 1.5rem;
+padding: 20px;
+
+}
+.button{
+    padding: 20px;
+}
+.button button{
+padding: 20px;
+color: rgb(255, 255, 255);
+background:black ;
 }
 .box2{
-    border: 1px rgb(212, 212, 212);
-    border-style:;
-    align-items: center;
-     padding: 150px 30px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.box2 img{
+    height: 30vh;
+    width: 100%;
    
-    margin: 50px 100px;
-     border: solid rgb(180, 178, 178);
-     border-radius: 5%;
+    
+    
+     /* padding: 150px 30px;
+   
+    margin: 50px 100px; */
+    /* box-shadow: 0 20px 20px rgba(0,0,0,0.5);
+     border-radius: 5%; */
      
  }
- .box3{
-    border: 1px black;
-    border-style:;
-    align-items: center;
-     padding: 150px 30px;
+
+.box-text{
+   font-family: 'Poppins', cursive;
+   font-size: 2rem;
+   display: flex;
+   align-items: top;
    
-    margin: 50px 100px;
-     border: solid rgb(179, 175, 175);
-     border-radius: 5%;
-     
- }
-.bo{
-    font-family: 'Lobster Two', cursive;
-    position: absolute;
-    top: 70%;
-    left: 25%;
-    transform: translate(-70%, -25%);
-    font-size: 1.5rem;
-    align-items: center ;
-    border: solid rgb(0, 0, 0);
-    border-bottom: none;
-    background-color: #ffffff;
-    padding: 80px 100px;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+   justify-content: left;
+}
+.box-img{
+    width: 0.2em;
+    height: 0.2em;
 }
 .responsible{
     font-family: 'Lobster Two', cursive;
@@ -181,52 +260,5 @@ grid-template-columns: 1fr 1fr 1fr;
 transform: translateY(100%);
 display: inline-block;
 }
-.Login{
-border: 5px solid #5ba2b9;
 
 
-padding: 5px 15px;
-
-
-
-}
-.search{
-position: absolute;
-top: 40%;
-left: 50%;
-transform: translate(-50%,-50%);
-background: white;
-height: 40px;
-border-radius: 40px;
-padding: 10px;
-}
-
-.search:hover {
-    width: 240px;
-    padding: 0 6px;
-   }
-
-   .username{
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -30%);
-    font-size: 1.4rem;
-    font-family: 'Lobster Two', cursive; 
-   }
-   .password{
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -30%);
-    font-size: 1.4rem;
-    font-family: 'Lobster Two', cursive; 
-   }
-   .submit{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -30%);
-    font-size: 1.4rem;
-    font-family: 'Lobster Two', cursive; 
-   }
