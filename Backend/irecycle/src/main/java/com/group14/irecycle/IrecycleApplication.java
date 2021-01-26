@@ -27,7 +27,8 @@ public class IrecycleApplication {
 	@Bean
 	CommandLineRunner runner(){
 		return args -> {
-			userRepository.save(new User("rjshuttleworth24@gmail.com", "password", "Robert", "Shuttleworth", "07498530519", Date.valueOf("1111-11-11")));
+			// password is 'password'
+			userRepository.save(new User("rjshuttleworth24@gmail.com", "$2a$10$2A1.jl.CRgaCmuJaUTOG5ebKbTGNXkGEesP/UqaMsw5/IUWw7JWBO", "Robert", "Shuttleworth", "07498530519", Date.valueOf("1111-11-11"), "ADMIN"));
 		};
 	}
 }
