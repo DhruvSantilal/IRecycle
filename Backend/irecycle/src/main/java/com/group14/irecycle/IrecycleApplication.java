@@ -1,6 +1,6 @@
 package com.group14.irecycle;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -26,9 +26,10 @@ public class IrecycleApplication {
 
 	@Bean
 	CommandLineRunner runner(){
+		userRepository.deleteAll();
 		return args -> {
 			// password is 'password'
-			userRepository.save(new User("rjshuttleworth24@gmail.com", "$2a$10$2A1.jl.CRgaCmuJaUTOG5ebKbTGNXkGEesP/UqaMsw5/IUWw7JWBO", "Robert", "Shuttleworth", "07498530519", Date.valueOf("1111-11-11"), "ADMIN"));
+			userRepository.save(new User("rjshuttleworth24@gmail.com", "$2a$10$2A1.jl.CRgaCmuJaUTOG5ebKbTGNXkGEesP/UqaMsw5/IUWw7JWBO", "Robert", "Shuttleworth", "07498530519", LocalDate.parse("1111-11-11"), "ADMIN"));
 		};
 	}
 }

@@ -1,7 +1,7 @@
 package com.group14.irecycle.model;
 
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -37,14 +37,14 @@ public class User {
 
 	@Column(nullable = false)
 	@Temporal(TemporalType.DATE)
-	private Date birthDate;
+	private LocalDate birthDate;
 	
 	@Column(nullable = false)
     private String role;
 
 	public User() {}
 
-	public User(String email, String password, String firstName, String surname, String phoneNo, Date birthDate, String role) {
+	public User(String email, String password, String firstName, String surname, String phoneNo, LocalDate birthDate, String role) {
 		super();
 		this.email = email;
 		this.password = password;
@@ -104,11 +104,11 @@ public class User {
 		this.phoneNo = phoneNo;
 	}
 
-	public Date getBirthDate() {
+	public LocalDate getBirthDate() {
 		return birthDate;
 	}
 
-	public void setBirthDate(Date birthDate) {
+	public void setBirthDate(LocalDate birthDate) {
 		this.birthDate = birthDate;
 	}
 
