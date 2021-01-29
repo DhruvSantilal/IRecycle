@@ -1,13 +1,17 @@
 package com.group14.irecycle.model;
 
 
+import java.sql.Date;
 import java.time.LocalDate;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -36,22 +40,28 @@ public class User {
 	private String phoneNo;
 
 	@Column(nullable = false)
-	@Temporal(TemporalType.DATE)
-	private LocalDate birthDate;
+	private Date birthDate;
+	
+	@Column(nullable = false)
+	private String address;
 	
 	@Column(nullable = false)
     private String role;
+	
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
+	private List<Listing> listings;
 
 	public User() {}
 
-	public User(String email, String password, String firstName, String surname, String phoneNo, LocalDate birthDate, String role) {
+	public User(String email, String password, String firstName, String surname, String phoneNo, LocalDate birthDate, String address, String role) {
 		super();
 		this.email = email;
 		this.password = password;
 		this.firstName = firstName;
 		this.surname = surname;
 		this.phoneNo = phoneNo;
-		this.birthDate = birthDate;
+		this.birthDate = Date.valueOf(birthDate);
+		this.address = address;
 		this.role = role;
 	}
 
@@ -104,12 +114,16 @@ public class User {
 		this.phoneNo = phoneNo;
 	}
 
-	public LocalDate getBirthDate() {
+	public Date getBirthDate() {
 		return birthDate;
 	}
 
 	public void setBirthDate(LocalDate birthDate) {
-		this.birthDate = birthDate;
+		this.birthDate = Date.valueOf(birthDate);
+	}
+	
+	public void setBirthDate(String birthDate) {
+		this.birthDate = Date.valueOf(birthDate);
 	}
 
 	public String getRole() {
@@ -118,5 +132,21 @@ public class User {
 
 	public void setRole(String role) {
 		this.role = role;
+	}
+
+	public List<Listing> getListings() {
+		return listings;
+	}
+
+	public void setListings(List<Listing> listings) {
+		this.listings = listings;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
 	}
 }
