@@ -27,11 +27,15 @@ function App() {
          placeholder='Enter your password'
        />
     </div>
+    <div className="img">
+<span className="close-btn">x</span> 
+
+</div>
     <button className='form-input-btn' type='submit'>
           Sign in
         </button>
         <span className='form-input-login'>
-          Not registered? Register <a href="#">here.</a>
+            Not registered? Register <a href="#">here.</a>
           {/* above is just a text asking for the users to login if they have an account */}
         </span>
    
