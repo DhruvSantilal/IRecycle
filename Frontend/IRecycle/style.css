@@ -383,18 +383,134 @@ display: inline-block;
 }
 
 .footer{
-    height: 30vh;
+    height: 55vh;
     background-color: #000000;
     display: flex;
     align-items: center;
     justify-content: center;
-
-
+    flex-direction: column;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding-top: 40px;
+  
 }
 
-.footer h1{
+.copyright{
    
     color: white;
     font-weight: lighter;
-    font-size: 24px;    
+    font-size: 24px;  
+    padding-top: 50px;
+}
+.help{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    height: 40vh;
+    padding-bottom: 10px;
+}
+.left-help{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    font-size: 1rem;
+    
+    
+}
+.adress{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+   
+    
+    padding-bottom: 10px
+}
+.adress h1{
+    font-size: 2rem;
+    color: white;
+    font-weight: lighter;
+}
+.adress p{
+    font-weight: lighter;
+    font-size: 1.1rem;
+    color: #a1a1a1;
+}
+.phone{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    
+    padding-bottom: 10px;
+   
+}
+.phone h1{
+    font-size: 2rem;
+    padding-top: 5px;
+    font-weight: lighter;
+}
+.phone p{
+    font-size: 1.4rem;
+    font-weight: lighter;
+    color: #a1a1a1;
+    
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    
+    
+    
+}
+.email h1{
+    font-weight: lighter;
+}
+.email p{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: #a1a1a1;
+}
+i{
+    font-size: 35px;
+    color: white;
+}
+
+.right-help{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    font-size: 1rem;
+    
+}
+
+.right-help h1{
+    font-size: 3.5rem;
+    font-weight: lighter;
+}
+
+.fullname-label{
+    font-size: 1rem;
+}
+.fullname-input{
+    font-size: 1.5rem;
+}
+.email-label{
+    font-size: 1rem;
+}
+.email-input{
+    font-size: 1.5rem;
+}
+
+.empty{
+    width: 100%;
+    height: 100px;
+}
+
+.button{
+    background: white;
+    text-decoration: none;
 }
