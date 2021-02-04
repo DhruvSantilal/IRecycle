@@ -1,11 +1,11 @@
 export default function validateInfo(values) {
     let errors = {};
 
-    if (!values.email) {
+    if (!values.email.trim()) {
         errors.email = "Email required";
       }
 
-      if (!values.password) {
+      if (!values.password.trim()) {
         errors.password = "Password is required"; 
       }
 

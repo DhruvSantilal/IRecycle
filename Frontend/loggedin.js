@@ -1,12 +1,13 @@
+  
 import React from 'react';
 import './Form.css';
-///success form after the user submits the registation using valid details
+
 const loggedin = () => {
-    return (
-      <div className="form-content-right">
-    < div className="form-success">YOU HAVE SUCCESSFULLY logged!</ div>
-      </div>
-    );
+  return (
+    <div className='form-content-right'>
+      <h1 className='form-loggedin'>We have received your request!</h1>
+    </div>
+  );
 };
 
 export default loggedin;

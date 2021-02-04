@@ -1,14 +1,15 @@
 import React from 'react';
 import './Form.css';
 import validate from './Validation';
-import useForm from './useForm'
+import useForm from './useForm';
+import './Form';
 
-const Login = () => {
-    const {handleChange,handleSubmit, values, errors} = useForm(  submitForm,   validate  )
+const Login = ({submitForm}) => {
+    const {handleChange,handleSubmit, values, errors} = useForm( submitForm,   validate  )
   return (
     <div className="App">
       
-      <form classname='form' onSubmit={handleSubmit}>
+      <form  onSubmit={handleSubmit}  className='form' noValidate>
         
      <h1>LOGIN HERE</h1>
      <div class="form-label">
@@ -46,7 +47,7 @@ const Login = () => {
         </button>
         <div>
         <span className='form-input-login'>
-            Not registered? Register <a href='react/registration-form/src/FormSignup.js'>here.</a>
+            Not registered? Register <a href='#'>here.</a>
           {/* above is just a text asking for the users to login if they have an account */}
         </span>
         </div>
