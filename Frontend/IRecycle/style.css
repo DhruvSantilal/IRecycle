@@ -536,3 +536,90 @@ i{
     background: white;
     text-decoration: none;
 }
+.results-container{
+    font-family: "Poppins", sans-serif;
+}
+.search-results{
+height: 20vh;
+background: black;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+.results-input{
+  width: 50%;
+  height: 30%;
+  display: flex;
+display: flex;
+
+
+justify-content: center;
+align-items: center;
+}
+.results-icon{
+    padding-left: 20px;
+    padding-top: 10px;
+    border: solid 1px white;
+    height: 30%;
+    width: 4%;
+}
+.results-found{
+    font-weight: lighter;
+    font-size: 2rem;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15%;
+}
+.results{
+height: 40vh;
+display: flex;
+flex-direction: row;
+
+justify-content: space-between;
+
+padding-left: 15%;
+padding-right: 15%;
+margin: 40px 0;
+}
+.filters{
+    display: flex;
+    flex-direction: column;
+    background: rgb(238, 238, 238);
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.items{
+    background: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+}
+
+.items-row{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.car{
+    height: 200px;
+    width: 300px;
+}
+.items-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+.items-info{
+    display: flex;
+    
+    justify-content: center;
+    padding: 25px;
+}
+
+

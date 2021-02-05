@@ -9,6 +9,14 @@ tl.fromTo(".landing", { opacity: 0 }, { opacity: 1, duration: 2 }, "-=1.2");
 // tl.fromTo(".login", { opacity: 0 }, { opacity: 1, duration: 2 }, "-=2");
 tl.fromTo(".box", { opacity: 0 }, { opacity: 1, duration: 2 }, "-=1.5");
 
-// tl.fromTo(".nav", { y: "0%" }, { y: "100%", ease: Power2.easeInOut }, "-=1");
-// tl.fromTo(hero, 1, {opacity: 0, x:30}, { opacity:1, x:0}, "-=2")
-tl.fromTo(hero, 1, {height: "0%"}, {height: "80%",ease:  Power2.easeInOut});
+
+// about page
+tl.fromTo(".app", { opacity: 0 }, { opacity: 1, duration: 2 }, "-=1.5");
+tl.fromTo(".sdg11", { opacity: 0 }, { opacity: 1, duration: 2 }, "-=2");
+tl.fromTo(".sdg12", { opacity: 0 }, { opacity: 1, duration: 2 }, "-=2");
+tl.fromTo(".sdg13", { opacity: 0 }, { opacity: 1, duration: 2 }, "-=2");
+tl.fromTo(".footer", { opacity: 0 }, { opacity: 1, duration: 2 }, "-=3");
+
+// results page
+tl.fromTo(".search-results", { opacity: 0 }, { opacity: 1, duration: 2 }, "-=3");
+tl.fromTo(".results-container", { opacity: 0 }, { opacity: 1, duration: 2 }, "-=2.5");
