@@ -122,18 +122,20 @@ nav{
        .search-box-wrapper {
         display: inline-flex;
         font-size: 20px;
-        margin-left: 40%;
+        margin-left: 28%;
         margin-top: 10%;
+        margin-bottom: 15%;
     }   
     
     
 .search-box-input {
-    font-size: inherit;
+    font-size: xx-large;
     border: 0.2em solid #7e7;
     border-radius: 0.5em 0 0 0.5em;
     padding: 0.2em 0.5em;
     outline: 0;
-    height: 35px;
+    height: 56px;
+    width: 700px;
 }
 
 .search-box-input:hover,
@@ -142,7 +144,7 @@ nav{
 }
 
 .search-box-button { 
-    font-size: inherit;
+    font-size: xx-large;
     border: 0.2em solid #7e7;
     border-radius: 0 0.5em 0.5em 0;
     background-color: #7e7;
@@ -152,6 +154,7 @@ nav{
     font-weight: bold;
     position: absolute;
     cursor: pointer;
+    
 }
 
 .search-box-button:hover,
