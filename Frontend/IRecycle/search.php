@@ -32,10 +32,10 @@ include_once 'dbcon.php';
             </div>
 
 
- <div class="search">
- <form action="searchResults.php" method="POST">
-  <input type="text" name="search" placeholder = "Search">
-  <button type="submit" name="submit-search">Search</button>
+<div class="search-box-wrapper">
+<form action="searchResults.php" method="POST">
+<input type="text" class="search-box-input" name="search" placeholder = "Search..."><!--
+--><button class="search-box-button" type="submit" name="submit-search">&#128269;</button>
 </form>
 </div>
 
