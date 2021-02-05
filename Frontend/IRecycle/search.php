@@ -26,12 +26,13 @@ include_once 'dbcon.php';
                         <li><a href="" class="Contact">Category</a></li>
                         <li><a href="" class="About">About</a></li>
                         <li><a href="search.php" class="Search">Search</a></li>
-                        <li><a href="login.html" class="Login">Login</a></li>
+                        <li><a href="login.html" class="login">Login</a></li>
                     </ul>
                 </nav>
             </div>
- 
- <div>
+
+
+ <div class="search">
  <form action="searchResults.php" method="POST">
   <input type="text" name="search" placeholder = "Search">
   <button type="submit" name="submit-search">Search</button>
@@ -39,9 +40,7 @@ include_once 'dbcon.php';
 </div>
 
 
-<div class="article-container">
 
-</div>
 </body>
 </html>
 
