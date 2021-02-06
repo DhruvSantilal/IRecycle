@@ -15,6 +15,7 @@ public class UserDetailServiceImpl implements UserDetailsService {
 	@Autowired
 	private UserRepository userRepository;
 	
+	// Fetches user from database
 	@Override
 	public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
 		User currentUser = userRepository.findByEmail(email);
@@ -24,5 +25,4 @@ public class UserDetailServiceImpl implements UserDetailsService {
             AuthorityUtils.createAuthorityList(currentUser.getRole()));
         return user;
 	}	
-
 }

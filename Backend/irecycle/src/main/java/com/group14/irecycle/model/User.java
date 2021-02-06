@@ -16,9 +16,9 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-
+// Creates user table in databse
 @Entity
-@Table(name = "users")
+@Table(name = "user")
 public class User {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)

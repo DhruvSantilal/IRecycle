@@ -12,9 +12,9 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-
+// Creates listings table in database
 @Entity
-@Table(name = "listings")
+@Table(name = "listing")
 public class Listing {
 
 	@Id

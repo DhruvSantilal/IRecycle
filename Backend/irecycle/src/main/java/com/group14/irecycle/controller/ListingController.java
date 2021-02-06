@@ -13,7 +13,7 @@ public class ListingController {
 	private ListingRepository listingRepository;
 
 	@RequestMapping("/listings")
-	public Iterable<Listing> getUsers() {
+	public Iterable<Listing> getListings() {
 		return listingRepository.findAll();
 	}
 }

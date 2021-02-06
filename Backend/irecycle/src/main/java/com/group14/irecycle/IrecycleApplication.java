@@ -30,6 +30,7 @@ public class IrecycleApplication {
 
 	}
 
+	// CommandLineRunner clears the database and adds user and listings
 	@Bean
 	CommandLineRunner runner(){
 		userRepository.deleteAll();
