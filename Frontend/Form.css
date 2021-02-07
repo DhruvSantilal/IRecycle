@@ -1,4 +1,4 @@
-.App-container {
+.form-container {
     margin: 100px auto;
     width: 1000px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3), 0 7px 20px 0 rgba(90, 77, 77, 0.3);
@@ -8,6 +8,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  /* above are the right alignment of the web and the set colour */
+  /* the colour of the x in the web  */
   .close-btn {
     position: absolute;
     top: 2%;
@@ -16,42 +18,42 @@
     z-index: 1;
     color: #fff;
     cursor: pointer;
-  } 
+  }
   
-  .App {
+  .form-content-left {
     background: linear-gradient(
       90deg,
-      rgb(36, 211, 74) 5%,
-      rgb(81, 85, 85) 60%
+      rgb(39, 176, 255) 0%,
+      rgb(0, 232, 236) 100%
     );
     border-radius: 10px 0 0 10px;
     position: relative;
   }
   /* below is the right side of the web where users enter the details and the widh and the height of them */
-   /* .image {
-    width: 50%;
+   .form-img {
+    width: 100%;
     height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  } */
+  }
   
   /* the successfully registered messaged after the users enter the correct details */
-  /* .form-success {
+  .form-success {
     text-align: center;
     font-size: 24px;
     margin-top: 80px;
     color: #fff;
-  } */
+  }
   /* This is the side bar on the right and it also sets the colour of it */
-  /* .form-content-right {
-    border-radius: 9000 10px 10px 0;
+  .form-content-right {
+    border-radius: 0 10px 10px 0;
     position: relative;
     background: linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(17, 17, 17) 100%);
-  } */
+  }
   /* the page alignments and WxL */
-  .App {
+  .form {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -64,7 +66,7 @@
     align-items: center;
   }
   /* colours for the texts */
-  .App h1 {
+  .form h1 {
     font-size: 1rem;
     text-align: start;
     width: 80%;
@@ -72,13 +74,18 @@
     color: #fff;
   }
   
-  .App-inputs {
+  .form-inputs {
     margin-bottom: 0.5rem;
     width: 80%;
   }
+  /*validation warning set to red*/
+  .form-inputs warning {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: #f00e0e;
+  }
   
-  
-  .App-label {
+  .form-label {
     display: inline-block;
     font-size: 0.8rem;
     margin-bottom: 6px;
@@ -95,7 +102,7 @@
     border: none;
   }
   /*user input field set to grey*/
-  .App-input::placeholder {
+  .form-input::placeholder {
     color: #595959;
     font-size: 12px;
   }
@@ -126,15 +133,15 @@
     transition: all 0.4s ease-out;
   }
   /* sign in here text is set to white  */
-  .App-input-login {
+  .form-input-login {
     font-size: 0.8rem;
-    margin-top: 110px;
-    color: rgb(19, 11, 11);
+    margin-top: 10px;
+    color: #fff;
     width: 80%;
     text-align: center;
   }
   /* sign in here is set to green  */
-  .App-input-login a {
+  .form-input-login a {
     text-decoration: none;
     color: #49831a;
     font-weight: 600;

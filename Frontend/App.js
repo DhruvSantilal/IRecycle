@@ -1,17 +1,12 @@
-import React from 'react';
+import './App.css';
 import Form from './Form';
-
 
 function App() {
   return (
-    <Form/>
-  )
-};
+    <div className="App">
+     <Form/>
+    </div>
+  );
+}
 
 export default App;
-
-
-//className='form-input'
-//type='email'
-//name='email'
-//placeholder='Enter your email'
