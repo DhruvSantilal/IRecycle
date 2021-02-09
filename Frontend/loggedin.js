@@ -9,5 +9,5 @@ const loggedin = () => {
     </div>
   );
 };
-
+// logged in page showing the user has successfully logged in and also have a logout button
 export default loggedin;

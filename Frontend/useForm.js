@@ -2,10 +2,9 @@ import {useState, useEffect} from 'react';
 
 const useForm = (callback, validate )=> {
     const[values, setValues] = useState({
-        username: '',
-        Email: '',
+        email: '',
         password: '',
-        password2: '',
+        
     }); 
     //above are all the fields that will be used to perfom functions are listed above
     const [errors, setErrors] = useState({});
@@ -21,19 +20,21 @@ const useForm = (callback, validate )=> {
     };
 const handleSubmit = e =>{
     e.preventDefault();
-  //when button is sumbitted it doesnt reload the page  
+    //when button is sumbitted it doesnt reload the page 
     setErrors(validate(values));
     setIsSubmitting(true);
 };
-useEffect(
-    () => {
+ useEffect(
+() => {
     if(Object.keys(errors).length === 0 && isSubmitting){
-     callback()  ;
-     }
-}, //callback performs the function once the expected functions are performed
-[errors]
-);
+      callback()  ;
+      }
+      //callback performs the function once the expected functions are performed
+ }, 
+ [errors]
+ );
 
     return { handleChange,handleSubmit, values,errors};
-};//returned and exported as this form will be used in other forms such as signup and validation.
+};
+//returned and exported as this form will be used in other forms such as login and validation.
 export default useForm;

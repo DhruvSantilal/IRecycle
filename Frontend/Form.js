@@ -1,33 +1,28 @@
 import React, {useState} from 'react';
-import FormSignup from './FormSignup';
-import FormSuccess from './FromSuccess';
+import Login from './Login';
 import './Form.css';
+import loggedin from './loggedin';
+import './loggedin.js'
+
 //above are all the imports which this page or form will use it in order to excecute the program
-export const Form = () => {
+ export const Form = () => {
     const [isSubmitted, setIsSubmitted] = useState(false) ;
     function submitForm(){
         setIsSubmitted(true);
     }
     return (
         <>
-        {/* close button is created below */}
-<div className="form-container">
-<span className="close-btn">x</span> 
-<div className="form-container-left">
-<img src='green.png' alt='image'  //images of the green background used
-className='form-img'/>
-</div>
 {/* when the user input is left empty this shows them the warning message */}
+<div className='form-container'>
 {!isSubmitted ?(
- <FormSignup submitForm={submitForm} /> 
+ <Login submitForm={submitForm} /> 
 ):(
- <FormSuccess/>
+ <loggedin/>
 )}
 </div>
-{/* above code will sibmit the form succefuly to form success if the entered details are correct */}
+{/* if the page values are entered correctly then it will take them to logged in page    */}
           
         </>
     );
 };
 export default Form;
-// this is exported as Form so it could be used in other forms
