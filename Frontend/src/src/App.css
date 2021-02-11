@@ -1,0 +1,9 @@
+  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* This is the font that I used for this front-end and i imported it from google fonts */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
