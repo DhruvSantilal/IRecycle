@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="Style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+ 
+  
+    <div class="Container">
+<div class="leftbox"> 
+    <nav>
+<a onclick="tabs(0)" class="tab active">
+    <i class="fa fa-user"></i>
+</a>
+<a onclick="tabs(1)" class="tab">
+    <i class="fa fa-cog"></i>
+</a>
+<a onclick="tabs(2)" class ="tab">
+    <i class="fas fa-address-card"></i>
+</a>
+</nav>
+
+</div>
+<div class ="rightbox">
+    <Div class="profile tabShow">
+        <h1>Personal Info</h1>
+        <h2>Full Name</h2> 
+        <input type="text" class="input" value="Enter your Full Name.">
+        <h2>Email Address</h2> 
+        <input type="text" class="input" value="Enter your Email Address.">
+        <h2>Phone Number</h2> 
+        <input type="text" class="input" value="Please enter your phone Number.">
+        <h2>Birthday</h2> 
+        <input type="text" class="input" value="**/**/****.">
+        <h2>Gender</h2> 
+        <input type="text" class="input" value="Male/Female.">
+        <h2>Password</h2> 
+        <input type="password" class="input" value="wonderf.">
+        <button class="btn">Update</button> 
+        <a href="/Frontend/Profile page/Profile.html">
+        <button class="btn">Go Back</button>
+         </a>
+
+    </Div>
+    <div class="Address tabShow">
+        <h1>Address Information</h1>
+        <h2>House Number</h2> 
+        <input type="text" class="input" value="123 owning street.">
+        <h2>Street name</h2> 
+        <input type="text" class="input" value="St juniors park".>
+        <h2>Post Code</h2> 
+        <input type="text" class="input" value="DY8 9BB">
+        <button class="btn">Update</button>
+        <a href="/Frontend/Profile page/Profile.html">
+            <button class="btn">Go Back</button>
+             </a>
+    </div>
+    <div class="Privacy tabShow">
+        <h1>Account Settings</h1>
+        <h2>Email notifications</h2>
+        <p></p>
+        <h2>Manage Privacy Settings</h2>
+        <p></p>
+        <h2>Terms of use</h2>
+        <p></p>
+        <button class="btn">Update</button>
+        <a href="/Frontend/Profile page/Profile.html">
+            <button class="btn">Go Back</button>
+             </a>
+    </div>
+
+</div>
+    </div>
+
+    <div class="profile-pic">
+        <img src="/Frontend/Profile page/Images/568135.jpg" id="photo">
+        <input type="file" id="file">
+        <label for ="file" id= "uploadBtn">Choose Photo</label>
+      </div>
+
+      <script src ="jquery.js"></script>
+      
+
+</body>
