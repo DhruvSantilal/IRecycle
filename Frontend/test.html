@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="loginvalidation.js"></script>
+    <link rel="stylesheet" href="Form.css">
+    <title>Document</title>
+</head>
+<body>
+    <div className="App">
+      
+        <form classname='form' name="loginForm" onsubmit = " return loginValidation()">
+          
+       <h1>LOGIN HERE</h1>
+       <div class="form-label">
+         <label>Email</label>
+
+         <p id="email"></p>
+         <input
+           
+           class='form-input'
+           type='email'
+           name='email'
+           placeholder='Enter your email'
+          
+         />
+      </div>
+      <div class="form-label">
+         <label>Password</label>
+         <input
+           
+           class='form-input'
+           type='password'
+           name='password'
+           placeholder='Enter your password'
+         />
+      </div>
+      <div class="img">
+  <span class="close-btn">x</span> 
+  
+  </div>
+    
+          <input id="submitbtn" type="submit" value="Submit"></input>
+          </form>
+      </div>
+</body>
+</html>
