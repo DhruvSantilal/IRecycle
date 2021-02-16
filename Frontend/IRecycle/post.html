@@ -9,56 +9,54 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <!-- fonts type needed for the texts -->
-    <title>IRecycle</title>
     <script src="https://kit.fontawesome.com/7523a45f05.js" crossorigin="anonymous"></script>
-    <!-- code required for the icons -->
+    <title>IRecycle</title>
 </head>
 <body>
     <main>
         <div class="container">
-            <!-- contains the whole page -->
             <div class="navbar">
                 <!-- container for navbar -->
                 <nav>
                     <h1 id="logo">IRecycle</h1>
-                    <!-- main logo -->
+                    <!-- logo -->
                     <ul class="nav-links">
-                        <!-- list of nav links which will be used to guide the user -->
                         <li><a href="index.html" class="Home">Home</a></li>
                         <li><a href="results.html" class="Category">Category</a></li>
                         <li><a href="about.html" class="About">About</a></li>
-                        <li><a href="post.html" class = "post">Post</a></li>
                         <li><a href="search.php" class="About">Search</a></li>
                         <li><a href="login.html" class="login">Login</a></li>
                     </ul>
                 </nav>
             </div>   
-            <section class="landing">
-                <!-- main landing which will have big text -->
-                
-                <h2 class="big-text">IRecycle</h2>
-                <h3 class="small-text">Recycle with ease</h3>
-            </section>
-            <section class="box">
-                 <!-- used for frequently used -->
-                    <div class="box1" >
-                        
-                        <h1 class="box-text" > Frequently added</h1>
-                        <h2 class="box-text2" > Recycling made easy, sustainable, made with blah
-                             blah blah dsad dsds dsds dsdsd sdsd.
-                         </h2>
-                         <div class="button"><button>
-                            More details
-                        </button></div>
-                        
-                    </div>
-                    <div class="box2">
-                        <img src="hero3.jpg" alt="">
-                     </div>
-                     <!-- picture for the item that is displayed -->
+     
+            <section class="post-section">
+                <h1>Post an ad</h1>
+                <div class="category">
+                    <h1>Category</h1>
                     
+                    <input class="category-input" type="text" id="fullname" placeholder="Car, Books, etc" name="fullname" >
+                </div>
+                <div class="location">
+                    <h1>Location</h1>
+                    <input class="location-input" type="text" id="fullname" placeholder="Postcode HA0 5TW" name="fullname" >
+                </div>
+                <div class="post-title">
+                    <h1>Ad title</h1>
+                    <input class="post-title-input" type="text" id="fullname" placeholder="Gcse books" name="fullname" >
+                </div>
+                <div class="post-image">
+                    <h1>Image</h1>
+                    <input class="post-image-input" type="file" name="fileToUpload" id="fileToUpload">
+                </div>
+                <div class="ad-description">
+                    <h1>Description</h1>
+                    <input class="ad-description-input" type="text" id="fullname" placeholder="addition information" name="fullname" >
+                </div>
+
+                <button class="post-button" type="button">Post Ad</button>
             </section>
+
             <footer class="footer">
                 <!-- footer which will be displayed in most pages -->
                 <div class="help">
@@ -109,36 +107,19 @@
                 <h1 class="copyright">Copyright © by IRecycle</h1>
                 <!-- bottom section which shows copyright -->
             </footer>
-            
         </main>
-        <!-- <div class="intro">
-            <div class="intro-text">
-                <h1 class="hide">
-                    <span class="text">Sustainable</span>
-                </h1>
-                <h1 class="hide">
-                    <span class="text">Responsible</span>
-                </h1>
-                <h1 class="hide">
-                    <span class="text">Recycle</span>
-                </h1>
-            </div>
-        </div>
-        <div class="slider"></div>
-    
-        
-        </div> -->
-        
-    
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
-      crossorigin="anonymous"
-    ></script>
-    <!-- uses the gsap animation library -->
-    <script src="app.js"></script>
-    <!-- links the file to js to create animations -->
 
+
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"
+      ></script>
+      <!-- uses the gsap animation library -->
+      <script src="app.js"></script>
+      <!-- links the file to js to create animations -->
+  
+    
 </body>
 
 </html>
