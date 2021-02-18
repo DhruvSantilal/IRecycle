@@ -5,7 +5,10 @@ import './Form.css';
 const loggedin = () => {
   return (
     <div className='form-content-right'>
-      <h1 className='form-loggedin'>We have received your request!</h1>
+      <h1 className='form-loggedin'>you logged in!</h1>
+      <button className='form-input-btn' type='submit'>
+          Login
+        </button>
     </div>
   );
 };
