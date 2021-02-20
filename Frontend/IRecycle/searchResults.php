@@ -32,7 +32,7 @@ include_once 'dbcon.php';
 <?php
     if(isset($_POST['submit-search'])){
         $search = mysqli_real_escape_string($conn, $_POST['search']);
-        $sql = "SELECT * FROM users WHERE surname LIKE '%$search%' OR first_name LIKE '%$search%'";
+        $sql = "SELECT * FROM listing WHERE description LIKE '%$search%' OR title LIKE '%$search%'";
         $result = mysqli_query($conn, $sql);
         $queryResult = mysqli_num_rows($result);
 
@@ -42,8 +42,8 @@ include_once 'dbcon.php';
         if($queryResult > 0){
             while ($row = mysqli_fetch_assoc($result)){
                 echo "<div class='article-box'>
-                <h3>".$row['first_name']."</h3>
-                <h3>".$row['surname']."</h3>
+                <h3>".$row['title']."</h3>
+                <h3>".$row['description']."</h3>
                 
                 </div>"; 
             }
