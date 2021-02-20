@@ -38,10 +38,10 @@ nav{
 }
 .nav-links a.login{
     z-index: 3;
-    border: 5px solid #212529;
+    border: 5px solid #0b3954;
     
     padding: 5px 15px;
-    background: #212529;
+    background: #0b3954;
     color: white;
     
 }
@@ -242,9 +242,11 @@ align-items: center;
     width: 100%;
     
 }
+
 .frequent-section{
     height: 100vh;
     margin: 40px 100px;
+  
 }
 .frequently-added{
 display: flex;
@@ -430,7 +432,7 @@ display: inline-block;
 
 .app{
     min-height: 25vh;
-    background: #ADB5BD;
+    background: #0b3954;
 }
 .app h1{
     display: flex;
@@ -438,6 +440,7 @@ display: inline-block;
     justify-content: center;
     padding-top: 3rem;
     font-size: 3rem;
+    color: white;
     
 }
 .app h2{
@@ -446,12 +449,14 @@ display: inline-block;
     justify-content: center;
     padding-top: 1.5rem;
     font-weight: lighter;
+    color: white;
 }
 .sdg11{
     display: grid;
     grid-template-columns: 1fr 2fr;
     min-height: 20vh;
     padding: 50px;
+    background: #BFD7EA;
 
    
     
@@ -486,7 +491,7 @@ display: inline-block;
     grid-template-columns: 2fr 1fr;
     min-height: 20vh;
     padding: 50px;
-
+    background: #BFD7EA;
    
     
 }
@@ -520,7 +525,7 @@ display: inline-block;
     grid-template-columns: 1fr 2fr;
     min-height: 20vh;
     padding: 50px;
-
+    background: #BFD7EA;
    
     
 }
@@ -549,7 +554,7 @@ display: inline-block;
 
 .footer{
     height: 60vh;
-    background-color: #212529;
+    background-color: #0b3954;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -565,7 +570,7 @@ display: inline-block;
     color: white;
     font-weight: lighter;
     font-size: 24px;  
-    padding-top: 50px;
+    margin-top: 50px;
 }
 .help{
     display: flex;
@@ -675,11 +680,14 @@ i{
     height: 100px;
 }
 
-.button{
-    background: white;
+.footer-button{
+    
     text-decoration: none;
-    display: flex;
-    align-items: center;
+  padding: 10px;
+  margin-right: 70%;
+
+    background: #BFD7EA;
+    border-radius: 3px;
 }
 .results-container{
     font-family: "Poppins", sans-serif;
@@ -774,7 +782,8 @@ margin: 40px 0;
 .post-section{
     min-height: 100vh;
     padding: 20px 320px;
-    background: #F8F9FA;
+    
+    
 }
 
 .post-section > h1{
@@ -790,13 +799,13 @@ margin: 40px 0;
     justify-content: space-between;
     border: black solid 1px;
     border-radius: 3px;
-    background: #f2f2f2;
+    background: #BFD7EA;
 }
 .category > h1{
     padding: 10px 10px;
     border-bottom: black solid 1px;
     color: #F8F9FA;
-    background: #212529;
+    background:#0b3954;
 }
 .category-input {
     display: flex;
@@ -815,14 +824,14 @@ margin: 40px 0;
     justify-content: space-between;
     border: black solid 1px;
     border-radius: 3px;
-    background: #f2f2f2;
+    background: #BFD7EA;
     margin-top: 50px;
 }
 .location > h1{
     padding: 10px 10px;
     border-bottom: black solid 1px;
     color: #F8F9FA;
-    background: #212529;
+    background: #0b3954;
 }
 .location-input {
     display: flex;
@@ -842,14 +851,14 @@ margin: 40px 0;
     justify-content: space-between;
     border: black solid 1px;
     border-radius: 3px;
-    background: #f2f2f2;
+    background: #BFD7EA;
     margin-top: 50px;
 }
 .post-title > h1{
     padding: 10px 10px;
     border-bottom: black solid 1px;
     color: #F8F9FA;
-    background: #212529;
+    background: #0b3954;
 }
 .post-title-input {
     display: flex;
@@ -869,14 +878,14 @@ margin: 40px 0;
     justify-content: space-between;
     border: black solid 1px;
     border-radius: 3px;
-    background: #f2f2f2;
+    background: #BFD7EA;
     margin-top: 50px;
 }
 .post-image > h1{
     padding: 10px 10px;
     border-bottom: black solid 1px;
     color: #F8F9FA;
-    background: #212529;
+    background: #0b3954;
 }
 .post-image-input {
     display: flex;
@@ -896,14 +905,14 @@ margin: 40px 0;
     justify-content: space-between;
     border: black solid 1px;
     border-radius: 3px;
-    background: #f2f2f2;
+    background: #BFD7EA;
     margin-top: 50px;
 }
 .ad-description > h1{
     padding: 10px 10px;
     border-bottom: black solid 1px;
     color: #F8F9FA;
-    background: #212529;
+    background: #0b3954;
 }
 .ad-description-input {
     display: flex;
@@ -923,7 +932,7 @@ margin: 40px 0;
     margin-bottom: 50px;
     width: 100%;
     height: 100px;
-    background: #14181C;
+    background: #C81D25;
     border-radius: 5px;
     color: #F8F9FA;
     font-weight: bold;
