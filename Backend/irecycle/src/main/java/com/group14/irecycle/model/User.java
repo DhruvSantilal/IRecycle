@@ -16,7 +16,7 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-// Creates user table in databse
+// Database user table
 @Entity
 @Table(name = "user")
 public class User {
@@ -33,16 +33,16 @@ public class User {
 	@Column(nullable = false)
 	private String password;
 
-	@Column(nullable = false)
+	@Column(nullable = false, name = "first_name")
 	private String firstName;
 
 	@Column(nullable = false)
 	private String surname;
 
-	@Column(nullable = false, unique = true, length = 11)
+	@Column(nullable = false, unique = true, length = 11, name = "phone_number")
 	private String phoneNo;
 
-	@Column(nullable = false)
+	@Column(nullable = false, name = "birth_date")
 	private Date birthDate;
 	
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "user")

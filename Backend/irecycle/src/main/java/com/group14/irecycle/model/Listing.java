@@ -12,7 +12,7 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-// Creates listings table in database
+// Database listing table
 @Entity
 @Table(name = "listing")
 public class Listing {
