@@ -37,15 +37,14 @@ public class IrecycleApplication {
 		listingRepository.deleteAll();
 		return args -> {
 			// password is 'password'
-			// field order: email, password, forename, surname, phone, date, address, role
+			// field order: email, username, password, forename, surname, phone, dob
 			User user1 = new User("rjshuttleworth24@gmail.com", 
+					"RobertS",
 					"$2a$10$2A1.jl.CRgaCmuJaUTOG5ebKbTGNXkGEesP/UqaMsw5/IUWw7JWBO", 
 					"Robert", 
 					"Shuttleworth", 
 					"07498530519", 
-					LocalDate.of(1111, 11, 30),
-					"Brunel University, Uxbridge, UB8 3PH",
-					"ADMIN");
+					LocalDate.of(1111, 11, 30));
 			userRepository.save(user1);
 			//field order: name, description, user 
 			listingRepository.save(new Listing("Bicycle", "5 years old, good condition", user1));
