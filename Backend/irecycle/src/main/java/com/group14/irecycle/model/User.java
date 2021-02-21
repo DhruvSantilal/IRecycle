@@ -3,14 +3,20 @@ package com.group14.irecycle.model;
 
 import java.sql.Date;
 import java.time.LocalDate;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -21,12 +27,12 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @Table(name = "user")
 public class User {
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
 
 	@Column(nullable = false, unique = true)
 	private String email;
-	
+
 	@Column(nullable = false, unique = true)
 	private String username;
 
@@ -44,10 +50,20 @@ public class User {
 
 	@Column(nullable = false, name = "birth_date")
 	private Date birthDate;
-	
+
+	// links to listing table
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
 	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"}) 
 	private List<Listing> listings;
+
+	// links join table for saved listings
+	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
+	@JoinTable(name = "saved_listings", 
+	joinColumns = {
+			@JoinColumn(name = "user_id", referencedColumnName = "id", nullable = false, updatable = false)},
+	inverseJoinColumns = {
+			@JoinColumn(name = "listing_id", referencedColumnName = "id", nullable = false, updatable = false)})
+	private Set<Listing> savedListings = new HashSet<>();
 
 	public User() {}
 
@@ -66,11 +82,11 @@ public class User {
 	public void setBirthDate(LocalDate birthDate) {
 		this.birthDate = Date.valueOf(birthDate);
 	}
-	
+
 	public void setBirthDate(String birthDate) {
 		this.birthDate = Date.valueOf(birthDate);
 	}
-	
+
 	public void setBirthDate(Date birthDate) {
 		this.birthDate = birthDate;
 	}
@@ -142,5 +158,13 @@ public class User {
 
 	public void setListings(List<Listing> listings) {
 		this.listings = listings;
+	}
+
+	public Set<Listing> getSavedListings() {
+		return savedListings;
+	}
+
+	public void setSavedListings(Set<Listing> savedListings) {
+		this.savedListings = savedListings;
 	}
 }
