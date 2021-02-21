@@ -64,6 +64,15 @@ public class User {
 			@JoinColumn(name = "listing_id", referencedColumnName = "id", nullable = false, updatable = false)})
 	private Set<Listing> savedListings = new HashSet<>();
 
+	// links join table for user addresses
+	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
+	@JoinTable(name = "user_address", 
+	joinColumns = {
+			@JoinColumn(name = "user_id", referencedColumnName = "id", nullable = false, updatable = false)},
+	inverseJoinColumns = {
+			@JoinColumn(name = "address_id", referencedColumnName = "id", nullable = false, updatable = false)})
+	private Set<Address> addresses = new HashSet<>();
+
 	public User() {}
 
 	public User(String email, String username, String password, String firstName, String surname, String phoneNo, LocalDate birthDate) {

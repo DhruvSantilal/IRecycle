@@ -1,10 +1,15 @@
 package com.group14.irecycle.model;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 // Database address table
@@ -14,22 +19,26 @@ public class Address {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
-	
+
 	@Column(nullable = false)
 	private String line1;
-	
+
 	@Column(nullable = true)
 	private String line2;
-	
+
 	@Column(nullable = true)
 	private String line3;
-	
+
 	@Column(nullable = false)
 	private String city;
-	
+
 	@Column(nullable = false)
 	private String postcode;
-	
+
+	// links join table for saved addresses
+	@ManyToMany(mappedBy = "addresses", fetch = FetchType.LAZY)
+	private Set<User> users = new HashSet<>();
+
 	public Address() {}
 
 	public Address(String line1, String line2, String line3, String city, String postcode) {
@@ -89,6 +98,6 @@ public class Address {
 	public void setPostcode(String postcode) {
 		this.postcode = postcode;
 	}
-	
-	
+
+
 }
