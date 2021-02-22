@@ -17,6 +17,7 @@ nav{
     justify-content: space-between;
     min-height: 10vh;
     padding: 0rem 5rem
+    
 }
 
 .nav-links{
@@ -431,15 +432,19 @@ display: inline-block;
 
 
 .app{
-    min-height: 25vh;
+    min-height: 90vh;
     background: #0b3954;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .app h1{
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 3rem;
-    font-size: 3rem;
+    font-size: 15rem;
     color: white;
     
 }
@@ -447,109 +452,133 @@ display: inline-block;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     font-weight: lighter;
-    color: white;
+    color: #BFD7EA;
+}
+.sdg-title{
+    background: white;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    font-size: 5rem;
 }
 .sdg11{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    min-height: 20vh;
-    padding: 50px;
-    background: #BFD7EA;
-
+    display: flex;
+    flex-direction: row;
+    min-height: 80vh;
+    justify-content: space-around;
+    background: white;
+    align-items: center;
    
     
 }
-.sdg11 .text{
-    border-left: 5px solid #000000;
-}
-.sdg11 .text h1{
+.sdg11 > .text h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 3rem;
+    
     font-size: 3rem;
+    
 }
-.sdg11 .text h2{
+.sdg11 > .text h2{
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-top: 1.5rem;
+    justify-content: left;
+    padding-top: 1rem;
     font-weight: lighter;
+    color: #494a4b;
+    
 }
-.sdg11 .img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.sdg11 > .img >img{
+   width: 300px;
+   height: 50vh;
+   
+    
 }
 
 
 
 .sdg12{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    min-height: 20vh;
-    padding: 50px;
-    background: #BFD7EA;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    justify-content: space-around;
+    align-items: center;
    
     
 }
-.sdg12 .text{
-    border-right: 5px solid #000000;
-}
-.sdg12 .text h1{
+.sdg12 > .text h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 3rem;
+    
     font-size: 3rem;
 }
-.sdg12 .text h2{
+.sdg12 > .text h2{
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-top: 1.5rem;
+    justify-content: left;
+    padding-top: 2rem;
     font-weight: lighter;
-    padding-left: 10rem;
+    color: #494a4b;
 }
-.sdg12 .img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.sdg12 > .img >img{
+   width: 300px;
+   height: 50vh;
+   
+    
 }
 
 
 .sdg13{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    min-height: 20vh;
-    padding: 50px;
-    background: #BFD7EA;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    justify-content: space-around;
+    background: white;
+    align-items: center;
    
     
 }
-.sdg13 .text{
-    border-left: 5px solid #000000;
-}
-.sdg13 .text h1{
+.sdg13 > .text h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 3rem;
-    font-size: 3rem;
+    
+    font-size: 5rem;
 }
-.sdg13 .text h2{
+.sdg13 > .text h2{
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-top: 1.5rem;
+    justify-content: left;
+    padding-top: 2rem;
     font-weight: lighter;
+    color: #494a4b;
 }
-.sdg13 .img{
+.sdg13 > .img >img{
+   width: 300px;
+   height: 50vh;
+   
+    
+}
+.scope{
+    height: 100vh;
+}
+.scope > h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 10vh;
+    font-size: 8rem
+}
+.map-wrap{
+    height: 90vh;
+}
+.map{
+    height: 90vh;
+    padding: 50px;
 }
 
 .footer{
