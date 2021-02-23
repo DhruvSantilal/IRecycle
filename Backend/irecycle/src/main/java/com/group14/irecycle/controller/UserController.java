@@ -9,6 +9,7 @@ import com.group14.irecycle.repository.UserRepository;
 
 @RestController
 public class UserController {
+	
 	@Autowired
 	private UserRepository userRepository;
 
@@ -17,8 +18,4 @@ public class UserController {
 		return userRepository.findAll();
 	}
 	
-	@RequestMapping("/login")
-	public String login() {
-		return "login";
-	}
 }

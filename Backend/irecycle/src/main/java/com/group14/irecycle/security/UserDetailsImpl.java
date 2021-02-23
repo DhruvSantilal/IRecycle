@@ -2,7 +2,6 @@ package com.group14.irecycle.security;
 
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.List;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
