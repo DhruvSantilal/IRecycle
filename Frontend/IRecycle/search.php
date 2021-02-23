@@ -44,7 +44,6 @@ include_once 'dbcon.php';
 
 
 
-
 <footer class="footer">
                 <div class="help">
                     <div class="left-help">
@@ -68,22 +67,13 @@ include_once 'dbcon.php';
                         </div>
                     </div>
                     <div class="right-help">
-                        <h1>How can we help?</h1>
-                        
-                        <label class="fullname-label" for="fullname">Full name</label>
-                        <input class="fullname-input" type="text" id="fullname" name="fullname" ><br>
-                        
-                        
-                        <label class="email-label" for="email">Email</label>
-                        <input class="email-input" type="text" id="email" name="email" ><br><br>
-                        
-                        
-
-                        <input class="empty" type="text" id="empty" name="empty" placeholder="Additional description"><br>
-
-                        <button class="button" type="button">Send</button>
-                    </div>
-                    
+                      <form class="contact-form" action="contactform.php" method="post">
+                      <input type="text" name="name" placeholder="Full name">
+                      <input type="text" name="mail" placeholder="Your e-mail">
+                      <input type="text" name="name" placeholder="Subject">
+                      <textarea name="message" placeholder="Message"></textarea>
+                      <button type="submit" name"submit">Send Mail</button>
+                      </form>
                 </div>
                 <h1 class="copyright">Copyright © by IRecycle</h1>
             </footer>
