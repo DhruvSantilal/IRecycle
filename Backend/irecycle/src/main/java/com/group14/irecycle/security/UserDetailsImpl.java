@@ -1,4 +1,4 @@
-package com.group14.irecycle.service;
+package com.group14.irecycle.security;
 
 import java.util.Arrays;
 import java.util.Collection;

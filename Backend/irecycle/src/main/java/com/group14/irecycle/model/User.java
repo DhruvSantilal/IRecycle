@@ -49,6 +49,9 @@ public class User {
 
 	@Column(nullable = false, name = "birth_date")
 	private Date birthDate;
+	
+	@Column(nullable = false, name = "admin")
+	private boolean admin;
 
 	// links to listing table
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
@@ -75,7 +78,7 @@ public class User {
 
 	public User() {}
 
-	public User(String email, String username, String password, String firstName, String surname, String phoneNo, LocalDate birthDate) {
+	public User(String email, String username, String password, String firstName, String surname, String phoneNo, LocalDate birthDate, boolean admin) {
 		super();
 		this.email = email;
 		this.username = username;
@@ -84,6 +87,7 @@ public class User {
 		this.surname = surname;
 		this.phoneNo = phoneNo;
 		this.birthDate = Date.valueOf(birthDate);
+		this.admin = admin;
 	}
 
 	//setters for different date formats
@@ -175,4 +179,21 @@ public class User {
 	public void setSavedListings(Set<Listing> savedListings) {
 		this.savedListings = savedListings;
 	}
+
+	public boolean isAdmin() {
+		return admin;
+	}
+
+	public void setAdmin(boolean admin) {
+		this.admin = admin;
+	}
+
+	public Set<Address> getAddresses() {
+		return addresses;
+	}
+
+	public void setAddresses(Set<Address> addresses) {
+		this.addresses = addresses;
+	}
+	
 }
