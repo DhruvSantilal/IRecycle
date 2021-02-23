@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -17,50 +18,30 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
-//import com.group14.irecycle.service.UserDetailServiceImpl;
-
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-	@Autowired
-	private UserDetailsService userDetailsService;
-
-	// Compare details with db and encrypted password
-	@Autowired
-	protected void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-		auth.userDetailsService(userDetailsService).passwordEncoder(new BCryptPasswordEncoder());
-	}
-
 	@Override
-	protected void configure(HttpSecurity http) throws Exception {
-		http.cors().and().authorizeRequests()
-		.antMatchers(HttpMethod.POST, "/login").permitAll()
-		.anyRequest().authenticated()
-		.and()
-		// Filter for the api/login requests
-		.addFilterBefore(new LoginFilter("/login",
-				authenticationManager()),
-				UsernamePasswordAuthenticationFilter.class)
-		// Filter for other requests to check JWT in header
-		.addFilterBefore(new AuthenticationFilter(),
-				UsernamePasswordAuthenticationFilter.class);
+	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+		auth.userDetailsService(userDetailsService);
+	}
+	
+	
+	@Override
+	public void configure(HttpSecurity http) throws Exception {
+		http.authorizeRequests()
+			.antMatchers("/").permitAll()
+			.antMatchers("/users").authenticated()
+			.antMatchers("/listings").permitAll()
+			.and().formLogin();
 	}
 
-	@Bean
-	CorsConfigurationSource corsConfigurationSource() {
-		UrlBasedCorsConfigurationSource source = 
-				new UrlBasedCorsConfigurationSource();
-		CorsConfiguration config = new CorsConfiguration();
-		config.setAllowedOrigins(Arrays.asList("*"));
-		config.setAllowedMethods(Arrays.asList("*"));
-		config.setAllowedHeaders(Arrays.asList("*"));
-		config.setAllowCredentials(true);
-		config.applyPermitDefaultValues();
 
-		source.registerCorsConfiguration("/**", config);
-		return source;
-	} 
+
+	@Autowired
+	UserDetailsService userDetailsService;
+	
 	//	// Uses database for user details
 	//	// Encrypts passwords using BCrypt
 	//	@Autowired
