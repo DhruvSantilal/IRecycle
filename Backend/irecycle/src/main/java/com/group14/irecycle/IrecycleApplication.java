@@ -47,6 +47,16 @@ public class IrecycleApplication {
 					LocalDate.of(1111, 11, 30),
 					true);
 			userRepository.save(user1);
+			
+			User user2 = new User("00000000@gmail.com", 
+					"user",
+					"$2a$10$2A1.jl.CRgaCmuJaUTOG5ebKbTGNXkGEesP/UqaMsw5/IUWw7JWBO", 
+					"Robert", 
+					"Shuttleworth", 
+					"00000000000", 
+					LocalDate.of(1111, 11, 30),
+					false);
+			userRepository.save(user2);
 			// field order: name, description, user 
 			listingRepository.save(new Listing("Bicycle", "5 years old, good condition", user1));
 			listingRepository.save(new Listing("Wardrobe", "2m x 1m x 1m, oak", user1));
