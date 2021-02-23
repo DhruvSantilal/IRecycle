@@ -16,4 +16,9 @@ public class UserController {
 	public Iterable<User> getUsers() {
 		return userRepository.findAll();
 	}
+	
+	@RequestMapping("/login")
+	public String login() {
+		return "login";
+	}
 }

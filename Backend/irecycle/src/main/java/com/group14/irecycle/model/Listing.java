@@ -1,5 +1,8 @@
 package com.group14.irecycle.model;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -7,29 +10,36 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-// Creates listings table in database
+// Database listing 
 @Entity
 @Table(name = "listing")
 public class Listing {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
 	
 	@Column(nullable = false)
 	private String title;
 	
+	@Column(nullable = false)
 	private String description;
 	
+	// links to user table
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "user")
+	@JoinColumn(name = "listing")
 	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"}) 
 	private User user;
+	
+	// links join table for saved listings
+	@ManyToMany(mappedBy = "savedListings", fetch = FetchType.LAZY)
+    private Set<User> users = new HashSet<>();
 
 	public Listing() {}
 	
@@ -71,5 +81,13 @@ public class Listing {
 
 	public void setUser(User user) {
 		this.user = user;
+	}
+
+	public Set<User> getUsers() {
+		return users;
+	}
+
+	public void setUsers(Set<User> users) {
+		this.users = users;
 	}
 }
