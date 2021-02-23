@@ -19,12 +19,13 @@ import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 // Database user table
 @Entity
 @Table(name = "user")
 public class User {
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
@@ -55,7 +56,7 @@ public class User {
 
 	// links to listing table
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
-	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"}) 
+	@JsonIgnore 
 	private List<Listing> listings;
 
 	// links join table for saved listings
