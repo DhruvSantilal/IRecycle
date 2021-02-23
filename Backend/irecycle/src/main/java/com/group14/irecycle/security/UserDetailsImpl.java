@@ -2,61 +2,68 @@ package com.group14.irecycle.security;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import com.group14.irecycle.model.User;
+
 public class UserDetailsImpl implements UserDetails {
 	
 	private String username;
+	private String password;
+	private boolean admin;
 	
 	public UserDetailsImpl() {};
 	
-	public UserDetailsImpl(String username) {
-		this.username = username;
+	public UserDetailsImpl(User user) {
+		this.username = user.getUsername();
+		this.password = user.getPassword();
+		this.admin = user.isAdmin();
 	}
 	
+	
+	// returns values from user table
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
-		// TODO Auto-generated method stub
-		return Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"));
+		if(admin == true) {
+			return Arrays.asList(new SimpleGrantedAuthority("ROLE_ADMIN"));
+		} else {
+			return Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"));
+		}
 	}
 
 	@Override
 	public String getPassword() {
-		// TODO Auto-generated method stub
-		return null;
+		return password;
 	}
 
 	@Override
 	public String getUsername() {
-		// TODO Auto-generated method stub
 		return username;
 	}
 
+	// hardcoded to true
 	@Override
 	public boolean isAccountNonExpired() {
-		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	@Override
 	public boolean isAccountNonLocked() {
-		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	@Override
 	public boolean isCredentialsNonExpired() {
-		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	@Override
 	public boolean isEnabled() {
-		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 	
 }
