@@ -1,3 +1,4 @@
+//animations
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
 // tl.to(".text", { y: "0%", duration: 1, stagger: 0.5 });
@@ -20,3 +21,27 @@ tl.fromTo(".footer", { opacity: 0 }, { opacity: 1, duration: 2 }, "-=3");
 // results page
 tl.fromTo(".search-results", { opacity: 0 }, { opacity: 1, duration: 2 }, "-=3");
 tl.fromTo(".results-container", { opacity: 0 }, { opacity: 1, duration: 2 }, "-=2.5");
+
+//form valodation
+const fullname = document.getElementById('fullname');
+const email = document.getElementById('email');
+const empty = document.getElementById('empty')
+//variables
+
+const form = document.getElementById('form')
+const errorElement = document.getElementById('error')
+
+form.addEventListener('button', (e) => {
+    let messages = []
+    if( fullname.value == null || fullname.value === '' ){
+        messages.push('full name is required')
+    }
+    if(email.value.length == null || email.value.length == "" ){
+        messages.push('email is required')
+    }
+    if(messages.length > 0){
+        e.preventDefault();
+        errorElement.innerText = messages.join(', ')
+    }
+   
+})
