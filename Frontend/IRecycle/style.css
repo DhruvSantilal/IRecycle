@@ -582,7 +582,7 @@ display: inline-block;
 }
 
 .footer{
-    height: 60vh;
+    height: 70vh;
     background-color: #0b3954;
     display: flex;
     align-items: center;
@@ -608,7 +608,7 @@ display: inline-block;
     align-items: center;
     justify-content: space-between;
     width: 60%;
-    height: 40vh;
+    max-height: 50vh;
     padding-bottom: 10px;
 }
 .left-help{
@@ -617,7 +617,7 @@ display: inline-block;
     align-items: left;
     justify-content: space-between;
     font-size: 1rem;
-    
+    max-height: 60vh;
     
 }
 .adress{
@@ -685,6 +685,7 @@ i{
     align-items: left;
     justify-content: space-between;
     font-size: 1rem;
+    max-height: 60vh;
     
 }
 
@@ -704,12 +705,20 @@ i{
     width: 500px;
     
 }
+#error-fullname{
+    transform: translateY(-70%);
+    color: #C81D25;
+}
 .email-label{
     font-size: 1rem;
 }
 .email-input{
     height: 30px;
     width: 500px;
+}
+#error-email{
+    transform: translateY(-70%);
+    color: #C81D25;
 }
 .additional-description{
     font-size: 1rem;
@@ -723,7 +732,10 @@ i{
     width: 500px;
     height: 80px;
 }
-   
+#error-description{
+    transform: translateY(-70%);
+    color: #C81D25;
+}
     
 
 
@@ -737,6 +749,7 @@ i{
     background: #BFD7EA;
     border-radius: 3px;
 }
+
 .results-container{
     font-family: "Poppins", sans-serif;
 }
