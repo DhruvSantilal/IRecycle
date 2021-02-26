@@ -1,6 +1,9 @@
 <?php
 include_once 'dbcon.php';
+include 'sendEmail.php';
 ?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -67,17 +70,18 @@ include_once 'dbcon.php';
                         </div>
                     </div>
                     <div class="right-help">
-                      <form class="contact-form" action="contactform.php" method="post">
+                      <form class="contact-form" action="" method="post">
                       <input type="text" name="name" placeholder="Full name">
-                      <input type="text" name="mail" placeholder="Your e-mail">
-                      <input type="text" name="name" placeholder="Subject">
+                      <input type="text" name="email" placeholder="Your e-mail">
+                      <input type="text" name="subject" placeholder="Subject">
                       <textarea name="message" placeholder="Message"></textarea>
-                      <button type="submit" name"submit">Send Mail</button>
+                      <button type="submit" name= "submit">Send Mail</button>
                       </form>
                 </div>
                 <h1 class="copyright">Copyright © by IRecycle</h1>
             </footer>
 </body>
 </html>
+
 
 
