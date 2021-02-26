@@ -620,7 +620,7 @@ display: inline-block;
     max-height: 60vh;
     
 }
-.adress{
+.address{
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -628,12 +628,12 @@ display: inline-block;
     
     padding-bottom: 10px
 }
-.adress h1{
+.address h1{
     font-size: 2rem;
     color: white;
     font-weight: lighter;
 }
-.adress p{
+.address p{
     font-weight: lighter;
     font-size: 1.1rem;
     color: #a1a1a1;
@@ -686,6 +686,7 @@ i{
     justify-content: space-between;
     font-size: 1rem;
     max-height: 60vh;
+    margin-left: 10%;
     
 }
 
@@ -998,4 +999,8 @@ margin: 40px 0;
     color: #F8F9FA;
     font-weight: bold;
     font-size: 2rem;
+}
+
+.contact-form{
+    font-size: 105%;
 }

@@ -50,11 +50,10 @@ include 'sendEmail.php';
 <footer class="footer">
                 <div class="help">
                     <div class="left-help">
-                        <div class="adress">
+                        <div class="address">
                             <i class="far fa-address-card"></i>
-                            <h1>Adress</h1>
-                            <p>100 imaginaery <br>
-                                special avenue <br>
+                            <h1>Address</h1>
+                            <p>100 Placeholder Avenue <br>                           
                                 RN9 10RB
                             </p>
                         </div>
@@ -66,17 +65,31 @@ include 'sendEmail.php';
                         <div class="email">
                             <i class="fas fa-envelope-square"></i>
                             <h1>Email</h1>
-                            <p>imaginaery@linkedin.com</p>
+                            <p>irecycleldn@gmail.com</p>
                         </div>
                     </div>
+
                     <div class="right-help">
                       <form class="contact-form" action="" method="post">
-                      <input type="text" name="name" placeholder="Full name">
-                      <input type="text" name="email" placeholder="Your e-mail">
-                      <input type="text" name="subject" placeholder="Subject">
-                      <textarea name="message" placeholder="Message"></textarea>
+
+                    <legend><h3>Contact Us</legend><br>
+
+
+                      <label for="name">Name</label>   
+                      <input type="text" name="name" ><br>
+
+                      <label for="email">E-mail</label> 
+                      <input type="text" name="email" ><br>
+
+                      <label for="subject">Subject</label> 
+                      <input type="text" name="subject" ><br>
+
+                      <label for="message">Your message</label> 
+                      <textarea name="message" ></textarea><br>
+
                       <button type="submit" name= "submit">Send Mail</button>
                       </form>
+
                 </div>
                 <h1 class="copyright">Copyright © by IRecycle</h1>
             </footer>
