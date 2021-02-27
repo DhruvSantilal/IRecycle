@@ -25,7 +25,7 @@
                     <!-- main logo -->
                     <ul class="nav-links">
                         <!-- list of nav links which will be used to guide the user -->
-                        <li><a href="index.html" class="Home">Home</a></li>
+                        <li><a href="index.php" class="Home">Home</a></li>
                         <li><a href="results.html" class="Category">Category</a></li>
                         <li><a href="about.html" class="About">About</a></li>
                         <li><a href="post.html" class = "post">Post</a></li>
@@ -148,19 +148,30 @@
                     <div class="right-help">
                         <!-- right side will be to help user to contact -->
                         <h1>How can we help?</h1>
-                        
-                        <label class="fullname-label" for="fullname">Full name</label>
-                        <input class="fullname-input" type="text" id="fullname" name="fullname" ><br>
-                        
-                        
-                        <label class="email-label" for="email">Email</label>
-                        <input class="email-input" type="text" id="email" name="email" ><br><br>
-                        
-                        
-
-                        <input class="empty" type="text" id="empty" name="empty" placeholder="Additional description"><br>
-
-                        <button class="button" type="button">Send</button>
+                        <form id="form" method="GET">
+                            
+                            <div class="fullname">
+                                <label class="fullname-label" for="fullname">Full name</label>
+                                <input class="fullname-input" type="text" id="fullname" name="fullname" placeholder="bob worth" ><br>
+                                
+                            </div>
+                            <div id="error-fullname"></div>
+                            <div class="email">
+                                <label class="email-label" for="email">Email</label>
+                                <input class="email-input" type="text" id="email" name="email" placeholder="brate@yahoo.com" ><br><br>
+                                
+                            </div>
+                            <div id="error-email"></div>
+                            <div class="additional-description">
+                                <label class="additional-label" for="empty">additional description</label>
+                                <input class="additional-description-input" type="text" id="empty" name="empty" placeholder="Additional description"><br>
+        
+                            </div>
+                            <div id="error-description"></div>
+                            
+                            <button class="footer-button" type="submit">Submit</button>
+                        </form>
+                       
                     </div>
                     
                 </div>
@@ -194,7 +205,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- uses the gsap animation library -->
-    <script src="app.js"></script>
+    <script defer src="app.js"></script>
     <!-- links the file to js to create animations -->
 
 </body>

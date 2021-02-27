@@ -25,7 +25,7 @@ include 'sendEmail.php';
                 <nav>
                     <h1 id="logo">IRecycle</h1>
                     <ul class="nav-links">
-                        <li><a href="index.html" class="Home">Home</a></li>
+                        <li><a href="index.php" class="Home">Home</a></li>
                         <li><a href="results.html" class="Contact">Category</a></li>
                         <li><a href="about.html" class="About">About</a></li>
                         <li><a href="search.php" class="Search">Search</a></li>

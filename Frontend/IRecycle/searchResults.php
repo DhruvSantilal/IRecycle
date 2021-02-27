@@ -18,7 +18,7 @@ include_once 'dbcon.php';
                 <nav>
                     <h1 id="logo">IRecycle</h1>
                     <ul class="nav-links">
-                        <li><a href="index.html" class="Home">Home</a></li>
+                        <li><a href="index.php" class="Home">Home</a></li>
                         <li><a href="" class="Contact">Category</a></li>
                         <li><a href="" class="About">About</a></li>
                         <li><a href="search.php" class="Contact">Search</a></li>
