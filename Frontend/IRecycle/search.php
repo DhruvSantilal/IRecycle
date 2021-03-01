@@ -76,16 +76,16 @@ include 'sendEmail.php';
 
 
                       <label for="name">Name</label>   
-                      <input type="text" name="name" ><br>
+                      <input type="text" name="name" maxlength="30" required><br>
 
                       <label for="email">E-mail</label> 
-                      <input type="text" name="email" ><br>
+                      <input type="email" name="email" maxlength="75" required ><br>
 
                       <label for="subject">Subject</label> 
-                      <input type="text" name="subject" ><br>
+                      <input type="text" name="subject" maxlength="25" required><br>
 
                       <label for="message">Your message</label> 
-                      <textarea name="message" ></textarea><br>
+                      <textarea name="message" maxlength="1000" placeholder = "Max length 1000" required></textarea><br>
 
                       <button type="submit" name= "submit">Send Mail</button>
                       </form>
