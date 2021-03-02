@@ -27,6 +27,7 @@ const Login = ({submitForm}) => {
        {errors.email && <warning>{errors.email}</warning>}
         {/*this line is linked to the error validation i created and checks if the entered value is valid*/}
     </div>
+    
     <div class="form-label">
        <label>Password</label>
        <input
@@ -42,6 +43,12 @@ const Login = ({submitForm}) => {
        {errors.password && <warning>{errors.password}</warning>}
            {/* above code simply shows the validation for this specific field and warns them */}
     </div>
+    <div>
+        <span className='form-input-login'>
+           <a href='#'>Forgot your password?</a>
+          {/* above is just a text asking for the users to login if they have an account */}
+        </span>
+        </div>
     <div className="img">
 <span className="close-btn">x</span> 
 

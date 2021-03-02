@@ -1,13 +1,13 @@
   
 import React from 'react';
-import './Form.css';
+import './Loginform.css';
 
 const loggedin = () => {
   return (
     <div className='form-content-right'>
-      <h1 className='form-loggedin'>you logged in!</h1>
-      <button className='form-input-btn' type='submit'>
-          Login
+      <h1 className='form-loggedin'>Login Successful! </h1>
+      <button className='form-input-btn' type='submit' onClick = "./Login.js">
+          Logout
         </button>
     </div>
   );
