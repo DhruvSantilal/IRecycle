@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 .main{
     font-family: "Poppins", sans-serif;
@@ -458,11 +459,15 @@ display: inline-block;
 }
 .sdg-title{
     background: white;
-    height: 20vh;
-    display: flex;
+    height: 40vh;
+    
     align-items: center;
-    padding-left: 5%;
-    font-size: 5rem;
+    
+}
+.sdg-title > img{
+    object-fit: contain;
+    width: 80%;
+    height: 40vh;
 }
 .sdg11{
     display: flex;
@@ -471,29 +476,38 @@ display: inline-block;
     justify-content: space-around;
     background: white;
     align-items: center;
-   
+    padding-left: 5%;
+    padding-right: 5%;
     
 }
 .sdg11 > .text h1{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     
-    font-size: 3rem;
+    font-size: 2.5rem;
+
     
 }
+
 .sdg11 > .text h2{
     display: flex;
     align-items: center;
-    justify-content: left;
-    padding-top: 1rem;
+    justify-content: center;
+    padding-top: 4rem;
     font-weight: lighter;
     color: #494a4b;
+   
+    
+    
     
 }
-.sdg11 > .img >img{
-   width: 300px;
-   height: 50vh;
+
+
+.sdg11 >img{
+    
+   width: 800px;
+   height: 80vh;
    
     
 }
@@ -506,30 +520,32 @@ display: inline-block;
     min-height: 100vh;
     justify-content: space-around;
     align-items: center;
-   
-    
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'poppins',sans-serif;
 }
-.sdg12 > .text h1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    font-size: 3rem;
-}
-.sdg12 > .text h2{
+.sdg12 > .text > h1{
     display: flex;
     align-items: center;
     justify-content: left;
-    padding-top: 2rem;
+    
+    font-size: 2rem;
+}
+.sdg12 > .text > h2{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-top: 4rem;
     font-weight: lighter;
     color: #494a4b;
 }
-.sdg12 > .img >img{
-   width: 300px;
-   height: 50vh;
-   
+.sdg12 >img{
     
-}
+    width: 800px;
+    height: 80vh;
+    
+     
+ }
 
 
 .sdg13{
@@ -539,7 +555,8 @@ display: inline-block;
     justify-content: space-around;
     background: white;
     align-items: center;
-   
+    padding-left: 5%;
+    padding-right: 5%;
     
 }
 .sdg13 > .text h1{
@@ -547,22 +564,23 @@ display: inline-block;
     align-items: center;
     justify-content: center;
     
-    font-size: 5rem;
+    font-size: 2.5rem;
 }
-.sdg13 > .text h2{
+.sdg13 > .text >h2{
     display: flex;
     align-items: center;
-    justify-content: left;
-    padding-top: 2rem;
+    justify-content: center;
+    padding-top: 4rem;
     font-weight: lighter;
     color: #494a4b;
 }
-.sdg13 > .img >img{
-   width: 300px;
-   height: 50vh;
-   
+.sdg13 >img{
     
-}
+    width: 800px;
+    height: 80vh;
+    
+     
+ }
 .scope{
     height: 100vh;
 }
@@ -571,7 +589,7 @@ display: inline-block;
     align-items: center;
     justify-content: center;
     height: 10vh;
-    font-size: 8rem
+    font-size: 6rem
 }
 .map-wrap{
     height: 90vh;
