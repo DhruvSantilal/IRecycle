@@ -877,9 +877,9 @@ margin: 40px 0;
     flex-direction: column;
     
     justify-content: space-between;
-    border: black solid 1px;
+    
     border-radius: 3px;
-    background: #BFD7EA;
+ 
 }
 .category > h1{
     padding: 10px 10px;
