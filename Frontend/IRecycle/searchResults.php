@@ -1,5 +1,6 @@
 <?php
 include_once 'dbcon.php';
+include 'sendEmail.php';
 ?>
 
 <head>
@@ -14,18 +15,10 @@ include_once 'dbcon.php';
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
-<div class="navbar">
-                <nav>
-                    <h1 id="logo">IRecycle</h1>
-                    <ul class="nav-links">
-                        <li><a href="index.php" class="Home">Home</a></li>
-                        <li><a href="" class="Contact">Category</a></li>
-                        <li><a href="" class="About">About</a></li>
-                        <li><a href="search.php" class="Contact">Search</a></li>
-                        <li><a href="login.html" class="Login">Login</a></li>
-                    </ul>
-                </nav>
-            </div>
+<?php
+include 'nav.php';
+?>
+
 <h1>Search page</h1>
 
 <div class="article-container">
@@ -51,5 +44,11 @@ include_once 'dbcon.php';
             echo "No results found";
         }
     }
+?>
+
+
+<?php
+
+include 'footer.php';
 ?>
 </div>
