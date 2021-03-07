@@ -5,50 +5,87 @@
     }
     /*#49831a; */
     
-    .navbar{
-      background:#49831a;
-  }
-  nav{
+    nav{
       display: flex;
+      justify-content: space-around;
       align-items: center;
-      justify-content: space-between;
-      min-height: 10vh;
-      padding: 0rem 5rem
-      
-  }
-  
-  .nav-links{
-      display: flex;
+      background-color: #49831a;
+      font-family: 'poppins', sans-serif;
+      min-height: 8vh;
+    }
+    
+    .logo{
+      color: rgb(209, 207, 207);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 24;
+    }
+    
+    .nav-links{
+     display: flex;
+     justify-content: space-around;
+     width: 40%;
+    }
+    
+    .nav-links li{
       list-style: none;
-      justify-items: space-between;
-      font-family: "Poppins", sans-serif;
-      font-weight: lighter;
-      
-  }
-  .nav-links li{
-      padding-left: 5rem;
-      font-size: 1.2rem;
-      
-  }
-  .nav-links li a{
+    }
+    
+    .nav-links a{
+      color: rgb(209, 207, 207);
       text-decoration: none;
-      color: black;
-  }
-  .nav-links a.login{
-      z-index: 3;
-      border: 5px solid #49831a;
-      
-      padding: 5px 15px;
-      background:#49831a;
-      color: white;
-      
-  }
-  
-  #logo{
-      font-family: 'Poppins', cursive;
-      font-weight: lighter;
-      font-size: 2rem;
-  }
+      font-weight: bold;
+      font-size: 14px;
+    }
+    
+    .burger div{
+    width: 25px;
+    height: 5px;
+    background-color:rgb(209, 207, 207);
+    margin: 5px;
+    }
+    
+    .burger{
+      display: none;
+    }
+    
+      @media screen and (max-width:1024px){
+        .nav-links{
+          width: 60%;
+        }
+        }
+        @media screen and (max-width:768px){
+          body{
+            overflow-x: hidden;
+          }
+          .nav-links{
+            width: 60%;
+            position: absolute;
+            right: 0px;
+            height: 92vh;
+            top: 8vh;
+            background-color: #49831a; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            transform: translateX(100%);
+            transition: 0.5s ease-in;
+          }
+          .nav-links li{
+            opacity: 1;
+            /* Changing this from 1 to 0 will remove the some navigation links */
+          }
+          
+          .burger{
+            display: block;
+            cursor: pointer;
+          }
+
+          .nav-active{
+            transform: translateX(0%);  
+          }
+        }
     
     
     .presentation{
@@ -102,4 +139,3 @@
           cursor: pointer;
           margin: 30px 0px 0px 30px;
           }
-          
