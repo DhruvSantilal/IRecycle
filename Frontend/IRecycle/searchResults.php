@@ -19,7 +19,7 @@ include 'sendEmail.php';
 include 'nav.php';
 ?>
 
-<h1>Search page</h1>
+<h1 class="big-text2">Results page</h1>
 
 <div class="article-container">
 <?php
@@ -38,6 +38,7 @@ include 'nav.php';
                 <h3>".$row['title']."</h3>
                 <h3>".$row['description']."</h3>
                 
+                
                 </div>"; 
             }
         } else {
@@ -47,8 +48,10 @@ include 'nav.php';
 ?>
 
 
+
+</div>
+
 <?php
 
 include 'footer.php';
 ?>
-</div>
