@@ -91,13 +91,13 @@ form.addEventListener('submit', (e) => {
 
 // //variables
 
-// // const formPost = document.getElementById('formPost')
+// const formPost = document.getElementById('formPost')
 
 // const errorElement3 = document.getElementById('error-category')
 // // const errorElement1 = document.getElementById('error-email')
 // // const errorElement2= document.getElementById('error-description')
 
-// form.addEventListener('submit', (e) => {
+// formPost.addEventListener('submit', (e) => {
 //     let messages = []
 //     if( category.value == null || category.value === '' ){
 //         messages.push('full name is required')
@@ -114,7 +114,7 @@ form.addEventListener('submit', (e) => {
     
    
 // })
-// form.addEventListener('submit', (e) => {
+// formPost.addEventListener('submit', (e) => {
 //     let messages = []
 //     if(email.value.length == null || email.value.length == "" ){
 //         messages.push('email is required')
@@ -126,7 +126,7 @@ form.addEventListener('submit', (e) => {
 //     }
    
 // })
-// form.addEventListener('submit', (e) => {
+// formPost.addEventListener('submit', (e) => {
 //     let messages = []
 //     if(empty.value.length == null || empty.value.length == "" ){
 //         messages.push('description is required')
