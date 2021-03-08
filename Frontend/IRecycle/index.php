@@ -1,3 +1,6 @@
+<?php
+include 'sendEmail.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,22 +21,12 @@
     <main>
         <div class="container">
             <!-- contains the whole page -->
-            <div class="navbar">
+            
                 <!-- container for navbar -->
-                <nav>
-                    <h1 id="logo">IRecycle</h1>
-                    <!-- main logo -->
-                    <ul class="nav-links">
-                        <!-- list of nav links which will be used to guide the user -->
-                        <li><a href="index.php" class="Home">Home</a></li>
-                        <li><a href="results.html" class="Category">Category</a></li>
-                        <li><a href="about.html" class="About">About</a></li>
-                        <li><a href="post.html" class = "post">Post</a></li>
-                        <li><a href="search.php" class="About">Search</a></li>
-                        <li><a href="login.html" class="login">Login</a></li>
-                    </ul>
-                </nav>
-            </div>   
+                <?php
+                include 'nav.php';
+                ?>
+          
             <section class="landing">
                 <!-- main landing which will have big text -->
                 
@@ -117,67 +110,10 @@
             <!-- <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.7281078492!2d-0.2416804375114401!3d51.52877184053824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1613559247873!5m2!1sen!2suk" width="6000" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div> -->
-            <footer class="footer">
-                <!-- footer which will be displayed in most pages -->
-                <div class="help">
-                    <!-- top section -->
-                    <div class="left-help">
-                        <!-- splits the the footer, give the necessory info -->
-                        <div class="adress">
-                            <i class="far fa-address-card"></i>
-                            <!-- icon -->
-                            <h1>Adress</h1>
-                            <p>100 imaginaery <br>
-                                special avenue <br>
-                                RN9 10RB
-                            </p>
-                        </div>
-                        <div class="phone">
-                            <i class="fas fa-phone"></i>
-                            <!-- icon -->
-                            <h1>Number</h1>
-                            <p>0200 1212 1212</p>
-                        </div>
-                        <div class="email">
-                            <i class="fas fa-envelope-square"></i>
-                            <!-- icon -->
-                            <h1>Email</h1>
-                            <p>imaginaery@linkedin.com</p>
-                        </div>
-                    </div>
-                    <div class="right-help">
-                        <!-- right side will be to help user to contact -->
-                        <h1>How can we help?</h1>
-                        <form id="form" method="GET">
-                            
-                            <div class="fullname">
-                                <label class="fullname-label" for="fullname">Full name</label>
-                                <input class="fullname-input" type="text" id="fullname" name="fullname" placeholder="bob worth" ><br>
-                                
-                            </div>
-                            <div id="error-fullname"></div>
-                            <div class="email">
-                                <label class="email-label" for="email">Email</label>
-                                <input class="email-input" type="text" id="email" name="email" placeholder="brate@yahoo.com" ><br><br>
-                                
-                            </div>
-                            <div id="error-email"></div>
-                            <div class="additional-description">
-                                <label class="additional-label" for="empty">additional description</label>
-                                <input class="additional-description-input" type="text" id="empty" name="empty" placeholder="Additional description"><br>
-        
-                            </div>
-                            <div id="error-description"></div>
-                            
-                            <button class="footer-button" type="submit">Submit</button>
-                        </form>
-                       
-                    </div>
-                    
-                </div>
-                <h1 class="copyright">Copyright © by IRecycle</h1>
-                <!-- bottom section which shows copyright -->
-            </footer>
+            <?php
+
+include 'footer.php';
+?>
             
         </main>
         <!-- <div class="intro">

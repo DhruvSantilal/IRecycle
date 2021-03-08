@@ -220,13 +220,15 @@ align-items: center;
 }
 
 .article-container{
-    width: 900px;
-    background-color: #fff;
+    width: 100%;
+    background-color: rgb(142, 211, 122);
     padding: 30px;
 }
 .article-box{
-    padding-bottom: 30px;
+    padding-bottom: 100px;
     width: 100%;
+    border-top: 4px dotted rgb(0, 0, 0);
+    
 }
 .input {
     padding: 0px 20px;
@@ -234,6 +236,16 @@ align-items: center;
     height: 40px;
     font-size: 22px;
 }
+
+.big-text2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
 .button{  
         width: 100px;
         height: 44px;
@@ -877,9 +889,9 @@ margin: 40px 0;
     flex-direction: column;
     
     justify-content: space-between;
-    border: black solid 1px;
+    
     border-radius: 3px;
-    background: #BFD7EA;
+ 
 }
 .category > h1{
     padding: 10px 10px;

@@ -7,10 +7,10 @@
                         <!-- list of nav links which will be used to guide the user -->
                         <li><a href="index.php" class="Home">Home</a></li>
                         <li><a href="results.html" class="Category">Category</a></li>
-                        <li><a href="about.html" class="About">About</a></li>
+                        <li><a href="about.php" class="About">About</a></li>
                         <li><a href="post.html" class = "post">Post</a></li>
                         <li><a href="search.php" class="About">Search</a></li>
-                        <li><a href="login.html" class="login">Login</a></li>
+                        <li><a href="login.php" class="login">Login</a></li>
                     </ul>
                 </nav>
             </div> 

@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing:border-box;
     }
+    /*#49831a; */
     
     /* nav{
       display: flex;
@@ -48,78 +49,44 @@
       display: none;
     }
     
-    @media screen and (max-width:1024px){
-      .nav-links{
-        width: 60%;
-      }
-      }
-      @media screen and (max-width:768px){
-        body{
-          overflow-x: hidden;
-        }
+      @media screen and (max-width:1024px){
         .nav-links{
           width: 60%;
-          position: absolute;
-          right: 0px;
-          height: 92vh;
-          top: 8vh;
-          background-color: #49831a; 
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          width: 50%;
-          transform: translateX(100%);
-          transition: 0.5s ease-in;
         }
-        .nav-links li{
-          opacity: 1;
-          /* Changing this from 1 to 0 will remove the some navigation links */
-        /* } */
-        
-        /* .burger{
-          display: block;
-          cursor: pointer;
         }
+        @media screen and (max-width:768px){
+          body{
+            overflow-x: hidden;
+          }
+          .nav-links{
+            width: 60%;
+            position: absolute;
+            right: 0px;
+            height: 92vh;
+            top: 8vh;
+            background-color: #49831a; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            transform: translateX(100%);
+            transition: 0.5s ease-in;
+          }
+          .nav-links li{
+            opacity: 1;
+            /* Changing this from 1 to 0 will remove the some navigation links */
+          /* } */
+          
+          .burger{
+            display: block;
+            cursor: pointer;
+          }
 
-        .nav-active{
-          transform: translateX(0%);  
+          .nav-active{
+            transform: translateX(0%);  
+          }
         }
-      }  */
-     nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        min-height: 10vh;
-        padding: 0rem 5rem
-        
-    }
     
-    .nav-links{
-        display: flex;
-        list-style: none;
-        justify-items: space-between;
-        font-family: "Poppins", sans-serif;
-        font-weight: lighter;
-        
-    }
-    .nav-links li{
-        padding-left: 5rem;
-        font-size: 1.2rem;
-        
-    }
-    .nav-links li a{
-        text-decoration: none;
-        color: black;
-    }
-    .nav-links a.login{
-        z-index: 3;
-        border: 5px solid #0b3954;
-        
-        padding: 5px 15px;
-        background: #0b3954;
-        color: white;
-        
-    }
     
     #logo{
         font-family: 'Poppins', cursive;
@@ -148,18 +115,6 @@
       padding: 30px 0px 0px 0px;
     }
     
-    .cta-Login{
-    
-    width: 150px;
-    height: 50px;
-    background-color: #49831a;
-    border:5px black;
-    cursor: pointer;
-    font-family: poppins;
-    margin: 30px 0px 0px 30px;
-    
-    }
-    
     .cta-Address {
     font-family: poppins;
     width: 150px;
@@ -169,15 +124,7 @@
     cursor: pointer;
     margin: 30px 0px 0px 30px;
     }
-    .cta-items {
-      font-family: poppins;
-      width: 150px;
-      height: 50px;
-      background-color: #49831a;
-      border: 5px black;
-      cursor: pointer;
-      margin: 30px 0px 0px 30px;
-      }
+    
       .cta-posts {
         font-family: poppins;
         width: 150px;
@@ -187,6 +134,7 @@
         cursor: pointer;
         margin: 30px 0px 0px 30px;
         }
+
         .cta-contact {
           font-family: poppins;
           width: 150px;
@@ -196,4 +144,3 @@
           cursor: pointer;
           margin: 30px 0px 0px 30px;
           }
-          

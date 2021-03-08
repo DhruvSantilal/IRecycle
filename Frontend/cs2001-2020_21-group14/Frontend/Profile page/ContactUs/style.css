@@ -140,6 +140,15 @@ flex-direction: column;
   {
       cursor: pointer;
   }
+
+  .alert{
+      text-align: center;
+      padding: 10px;
+      background: #79c879;
+      color:black;
+      margin-bottom: 10px;
+      display: none;
+  }
   
   @media (max-width: 990px)
   {

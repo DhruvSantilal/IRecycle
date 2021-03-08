@@ -39,27 +39,33 @@
                         </div>
                     </div>
             </div>
+            
             <div class="contactForm">
-                <form>
+                <form id = "userInfo">
+                    <div class="alert">Your Enquiry has been sent</div>
                     <h2><u>How Can We Help?</u></h2>
                     <div class = "inputbox">
-                        <input type="text" name = "name" required= "required">
+                       
+                        <input type="text" required= "required" id="name">
                         <span>Full Name</span>
                     </div>
                     <div class = "inputbox">
-                        <input type="text" name = "email" required= "required">
+                        <input type="text" required= "required" id="email">
                         <span>Email Address</span>
                     </div>
                     <div class = "inputbox">
-                      <textarea required ="Required"></textarea>
+                      <textarea required ="Required" id="message"></textarea>
                     </div>
                     <div class = "inputbox">
-                        <input type="Submit" name = "" value="Submit">
+                        <input type="submit" name = "" value="Submit">
                     </div>
                 </form>
                
                     <button class="btn">Previous Page</button>
-                     <script src= "app.js"></script>
+
+
+                    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase.js"></script>
+                     <script src= "app.js"></script>    
             </div>
                 </div>
     </section>
