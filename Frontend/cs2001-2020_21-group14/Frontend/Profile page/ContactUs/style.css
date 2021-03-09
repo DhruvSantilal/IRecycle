@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(to right, #49831a,white);
+    background: linear-gradient(to right, #0b3951,white);
     background-size: cover;
 }
 
@@ -121,7 +121,7 @@ flex-direction: column;
 
   .contactForm .inputbox input:focus ~ span,
     .contactForm .inputbox input:valid ~ span{
-      color: green;
+      color: #0b3951;
       font-size: 8px;
       transform: translateY(-20px);
   }
