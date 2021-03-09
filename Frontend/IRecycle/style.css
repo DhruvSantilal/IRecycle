@@ -751,6 +751,17 @@ i{
     transform: translateY(-70%);
     color: #C81D25;
 }
+.subject-class{
+    display: flex;
+    flex-direction: column;
+}
+.subject > label{
+    font-size: 1rem;
+}
+.subject-class-input{
+    height: 30px;
+    width: 500px;
+}
 .additional-description{
     font-size: 1rem;
     display: flex;

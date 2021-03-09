@@ -21,26 +21,39 @@
                     </div>
 
                     <div class="right-help">
-                      <form class="contact-form" action="" method="post">
+                        <form class="contact-form" action="" method="post">
 
-                    <legend><h3>Contact Us</legend><br>
+                        <legend><h3>Contact Us</legend><br>
 
+                        <div class="fullname">
+                        <label class="fullname-label" for="name">Name</label>   
+                        <input class="fullname-input" type="text" name="name" maxlength="30" required><br>
 
-                      <label for="name">Name</label>   
-                      <input type="text" name="name" maxlength="30" required><br>
+                        </div>
+                        
+                        
+                       
+                        <div class="email">
+                        <label class="email-label" for="email">E-mail</label> 
+                        <input class="email-input" type="email" name="email" maxlength="75" required ><br>
 
-                      <label for="email">E-mail</label> 
-                      <input type="email" name="email" maxlength="75" required ><br>
+                        </div>
+                        <div class="subject-class">
+                        <label class="subject-class-label" for="subject">Subject</label> <br>
+                        <input class="subject-class-input" type="text" name="subject" maxlength="25" required>
 
-                      <label for="subject">Subject</label> 
-                      <input type="text" name="subject" maxlength="25" required><br>
+                        </div>
+                        <br>
+                        <div class="additional-description">
+                        <label class="additional-label" for="message">Your message</label> 
+                        <textarea class="additional-description-input" name="message" maxlength="1000" placeholder = "Max length 1000" required></textarea><br>
 
-                      <label for="message">Your message</label> 
-                      <textarea name="message" maxlength="1000" placeholder = "Max length 1000" required></textarea><br>
-
-                      <button type="submit" name= "submit">Send Mail</button>
-                      </form>
-
+                        </div>
+                        
+                        <button class="footer-button" type="submit" name= "submit">Send Mail</button>
+                        </form>
+                    </div>
                 </div>
+                
                 <h1 class="copyright">Copyright © by IRecycle</h1>
             </footer>
