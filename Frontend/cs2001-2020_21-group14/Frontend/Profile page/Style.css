@@ -9,7 +9,7 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      background-color: #49831a;
+      background-color: #0b3951;
       font-family: 'poppins', sans-serif;
       min-height: 8vh;
     }
@@ -64,7 +64,7 @@
             right: 0px;
             height: 92vh;
             top: 8vh;
-            background-color: #49831a; 
+            background-color: #0b3951;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -112,31 +112,33 @@
     
     .cta-Address {
     font-family: poppins;
+    color: white;
     width: 150px;
     height: 50px;
-    background-color: #49831a;
-    border: 5px black;
+    background-color: #0b3951;
+    border: 5px white;
     cursor: pointer;
     margin: 30px 0px 0px 30px;
     }
     
       .cta-posts {
         font-family: poppins;
+        color: white;
         width: 150px;
         height: 50px;
-        background-color: #49831a;
-        border: 5px black;
+        background-color: #0b3951;
+        border: 5px white;
         cursor: pointer;
         margin: 30px 0px 0px 30px;
         }
 
         .cta-contact {
           font-family: poppins;
+          color: white;
           width: 150px;
           height: 50px;
-          background-color: #49831a;
-          border: 5px black;
+          background-color: #0b3951;
+          border: 5px white;
           cursor: pointer;
           margin: 30px 0px 0px 30px;
           }
-
