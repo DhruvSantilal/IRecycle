@@ -39,11 +39,11 @@
 
                         </div>
                         <div class="subject-class">
-                        <label class="subject-class-label" for="subject">Subject</label> <br>
+                        <label class="subject-class-label" for="subject">Subject</label> 
                         <input class="subject-class-input" type="text" name="subject" maxlength="25" required>
-
-                        </div>
                         <br>
+                        </div>
+                        
                         <div class="additional-description">
                         <label class="additional-label" for="message">Your message</label> 
                         <textarea class="additional-description-input" name="message" maxlength="1000" placeholder = "Max length 1000" required></textarea><br>

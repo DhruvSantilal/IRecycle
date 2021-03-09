@@ -1,4 +1,5 @@
 <?php
+include_once 'dbcon.php';
 include 'sendEmail.php';
 ?>
 <!DOCTYPE html>
@@ -32,11 +33,19 @@ include 'sendEmail.php';
                 
                 <h2 class="big-text">IRecycle</h2>
                 <h3 class="small-text">Recycle with ease</h3>
-                <div class="search-bar">
+                <!-- <div class="search-bar">
+                    <form action="searchResults.php" method="POST">
                     <input type="text" name="" class="results-input" placeholder="Search"/>
-            <div class="results-icon">
-                <a href=""><i class="fas fa-search"></i></a>
-            </div>
+                    <div class="results-icon">
+                    <a type="submit" name="submit-search" href="/"><i class="fas fa-search"></i></a>
+                    </form>
+                 </div>
+                </div> -->
+                <div class="search-bar">
+                    <form action="searchResults.php" method="POST">
+                    <input type="text" class="search-box-input" name="search" placeholder = "Search for item.."><!--
+                    --><button class="search-box-button" type="submit" name="submit-search">&#128269;</button>
+                    </form>
                 </div>
             </section>
             
