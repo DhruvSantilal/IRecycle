@@ -24,36 +24,37 @@ include 'sendEmail.php';
      
             <section class="post-section">
                 <form id="formPost" method="GET">
-                <h1>Post an ad</h1>
-                <div class="category">
-                    <h1>Category</h1>
-                    
-                    <input class="category-input" type="text" id="category" placeholder="Car, Books, etc" name="fullname" >
-                    <div id="error-category"></div>
-                </div>
-                <div class="location">
-                    <h1>Location</h1>
-                    <input class="location-input" type="text" id="location" placeholder="Postcode HA0 5TW" name="fullname" >
-                    <div id="error-location"></div>
-                </div>
-                <div class="post-title">
-                    <h1>Ad title</h1>
-                    <input class="post-title-input" type="text" id="postTitle" placeholder="Gcse books" name="fullname" >
-                    <div id="error-post-title"></div>
-                </div>
-                <div class="post-image">
-                    <h1>Image</h1>
-                    <input class="post-image-input" type="file" name="fileToUpload" id="postImage">
-                    <div id="error-post-image"></div>
-                </div>
-                <div class="ad-description">
-                    <h1>Description</h1>
-                    <input class="ad-description-input" type="text" id="adDescription" placeholder="addition information" name="fullname" >
-                    <div id="error-ad-description"></div>
-                </div>
+                    <h1>Post an ad</h1>
+                    <div class="category">
+                        <h1>Category</h1>
+                        
+                        <input class="category-input" type="text" id="category" placeholder="Car, Books, etc" name="fullname" maxlength="30" required>
+                        <div id="error-category"></div>
+                    </div>
+                    <div class="location">
+                        <h1>Location</h1>
+                        <input class="location-input" type="text" id="location" placeholder="Postcode HA0 5TW" name="fullname" maxlength="30" required>
+                        <div id="error-location"></div>
+                    </div>
+                    <div class="post-title">
+                        <h1>Ad title</h1>
+                        <input class="post-title-input" type="text" id="postTitle" placeholder="Gcse books" name="fullname" maxlength="75" required>
+                        <div id="error-post-title"></div>
+                    </div>
+                    <div class="post-image">
+                        <h1>Image</h1>
+                        <input class="post-image-input" type="file" name="fileToUpload" id="postImage" required>
+                        <div id="error-post-image"></div>
+                    </div>
+                    <div class="ad-description">
+                        <h1>Description</h1>
+                        <input class="ad-description-input" type="text" id="adDescription" placeholder="addition information" name="fullname" maxlength="500" required>
+                        <div id="error-ad-description"></div>
+                    </div>
 
-                <button class="post-button" type="submit">Post Ad</button>
-            </form>
+                    <button class="post-button" type="submit">Post Ad</button>
+                 
+                </form>
                
             </section>
 
