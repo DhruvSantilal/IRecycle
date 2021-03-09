@@ -10,6 +10,7 @@
                         <li><a href="about.php" class="About">About</a></li>
                         <li><a href="post.html" class = "post">Post</a></li>
                         <li><a href="search.php" class="About">Search</a></li>
+                        <li><a href="/Frontend/cs2001-2020_21-group14/Frontend/Profile page/Profile.html" class="Profile">Profile</a></li>
                         <li><a href="login.php" class="login">Login</a></li>
                     </ul>
                 </nav>
