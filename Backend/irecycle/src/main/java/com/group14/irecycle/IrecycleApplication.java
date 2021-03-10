@@ -57,9 +57,14 @@ public class IrecycleApplication {
 					LocalDate.of(1111, 11, 30),
 					false);
 			userRepository.save(user2);
+			
 			// field order: name, description, user 
 			listingRepository.save(new Listing("Bicycle", "5 years old, good condition", user1));
 			listingRepository.save(new Listing("Wardrobe", "2m x 1m x 1m, oak", user1));
+			listingRepository.save(new Listing("bike", "broken, oak", user1));
+			listingRepository.save(new Listing("car", "missing wheel, ok", user1));
+			listingRepository.save(new Listing("laptop", "brand new dell", user1));
+			listingRepository.save(new Listing("book", "java", user1));
 		};
 	}
 }
