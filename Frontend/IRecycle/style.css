@@ -223,8 +223,9 @@ align-items: center;
 
 .article-container{
     width: 100%;
-    background-color: rgb(142, 211, 122);
+    background-color: #BFD7EA;
     padding: 30px;
+    margin-bottom: 100px;
 }
 .article-box{
     padding-bottom: 100px;
@@ -244,8 +245,8 @@ align-items: center;
     align-items: center;
     justify-content: center;
     font-size: 5rem;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 300px;
 }
 
 .button{  

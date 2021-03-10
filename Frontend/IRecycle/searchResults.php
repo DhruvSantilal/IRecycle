@@ -21,6 +21,13 @@ include 'nav.php';
 
 <h1 class="big-text2">Results page</h1>
 
+<div class="search-bar">
+                    <form action="searchResults.php" method="POST">
+                    <input type="text" class="search-box-input" name="search" placeholder = "Search for item.."><!--
+                    --><button class="search-box-button" type="submit" name="submit-search">&#128269;</button>
+                    </form>
+                </div>
+
 <div class="article-container">
 <?php
     if(isset($_POST['submit-search'])){

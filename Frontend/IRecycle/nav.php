@@ -6,7 +6,7 @@
                     <ul class="nav-links">
                         <!-- list of nav links which will be used to guide the user -->
                         <li><a href="index.php" class="Home">Home</a></li>
-                        <li><a href="results.html" class="Category">Category</a></li>
+                        <li><a href="searchResults.php" class="Category">Category</a></li>
                         <li><a href="about.php" class="About">About</a></li>
                         <li><a href="post.php" class = "post">Post</a></li>
                         <li><a href="search.php" class="About">Search</a></li>
