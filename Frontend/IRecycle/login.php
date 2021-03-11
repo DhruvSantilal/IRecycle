@@ -31,13 +31,14 @@ include 'sendEmail.php';
         </section>
         
     </main>
+    <form class="contact-form" action="" method="post">
     <div class="username">
     <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <input type="text" placeholder="Enter Username" name="uname" maxlength="25" required>
 </div>
 <div class="password">
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw" maxlength="25" required>
 </div>
 <div class="submit">
     <button type="submit">Login</button>
@@ -45,6 +46,7 @@ include 'sendEmail.php';
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
 </div>
+</form>
     <!-- <div class="intro">
         <div class="intro-text">
             <h1 class="hide">
