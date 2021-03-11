@@ -199,6 +199,10 @@ align-items: center;
     border-color: black;
 }
 
+.bottom-button {
+   
+}
+
 .search-box-button { 
     font-size: 2rem;
     /* border: 0.2em solid #7e7; */
