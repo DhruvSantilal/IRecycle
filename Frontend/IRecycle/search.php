@@ -25,7 +25,7 @@ include 'nav.php';
 
 <div class="search-box-wrapper">
 <form action="searchResults.php" method="POST">
-<input type="text" class="search-box-input" name="search" placeholder = "Search..."><!--
+<input type="text" class="search-box-input" name="search" placeholder = "Search..."  maxlength="50" required><!--
 --><button class="search-box-button" type="submit" name="submit-search">&#128269;</button>
 </form>
 </div>

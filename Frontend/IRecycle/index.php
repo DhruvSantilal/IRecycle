@@ -43,7 +43,7 @@ include 'sendEmail.php';
                 </div> -->
                 <div class="search-bar">
                     <form action="searchResults.php" method="POST">
-                    <input type="text" class="search-box-input" name="search" placeholder = "Search for item.."><!--
+                    <input type="text" class="search-box-input" name="search" placeholder = "Search for item.." maxlength="50" required><!--
                     --><button class="search-box-button" type="submit" name="submit-search">&#128269;</button>
                     </form>
                 </div>
